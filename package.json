@@ -1,7 +1,7 @@
 {
   "name": "streamerbot",
   "displayName": "Streamer.bot C# Snippets",
-  "description": "Get Visual Studio Code Streamer.bot C# snippets to make your development easier",
+  "description": "C# snippets of all CPH methods; Using Directives; And some templates",
   "publisher": "Ik1497",
   "version": "1.0.1",
   "repository": {
