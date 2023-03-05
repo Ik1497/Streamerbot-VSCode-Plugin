@@ -360,91 +360,91 @@
     ]
   },
   "List<ClipData> GetClipsForUser(int userId, int count)": {
-    "prefix": ["GetClipsForUser"],
+    "prefix": ["CPHGetClipsForUser"],
     "body": [
       "List<ClipData> GetClipsForUser(${1:int userId}, ${2:int count});"
     ]
   },
   "List<ClipData> GetClipsForUser(int userId, DateTime start, DateTime end)": {
-    "prefix": ["GetClipsForUser"],
+    "prefix": ["CPHGetClipsForUser"],
     "body": [
       "List<ClipData> GetClipsForUser(${1:int userId}, ${2:DateTime start}, ${3:DateTime end});"
     ]
   },
   "List<ClipData> GetClipsForUser(int userId, DateTime start, DateTime end, int count)": {
-    "prefix": ["GetClipsForUser"],
+    "prefix": ["CPHGetClipsForUser"],
     "body": [
       "List<ClipData> GetClipsForUser(${1:int userId}, ${2:DateTime start}, ${3:DateTime end}, ${4:int count});"
     ]
   },
   "List<ClipData> GetClipsForUser(int userId, TimeSpan duration)": {
-    "prefix": ["GetClipsForUser"],
+    "prefix": ["CPHGetClipsForUser"],
     "body": [
       "List<ClipData> GetClipsForUser(${1:int userId}, ${2:TimeSpan duration});"
     ]
   },
   "List<ClipData> GetClipsForUser(int userId, TimeSpan duration, int count)": {
-    "prefix": ["GetClipsForUser"],
+    "prefix": ["CPHGetClipsForUser"],
     "body": [
       "List<ClipData> GetClipsForUser(${1:int userId}, ${2:TimeSpan duration}, ${3:int count});"
     ]
   },
   "List<ClipData> GetClipsForUser(string userName, int count)": {
-    "prefix": ["GetClipsForUser"],
+    "prefix": ["CPHGetClipsForUser"],
     "body": [
       "List<ClipData> GetClipsForUser(${1:string userName}, ${2:int count});"
     ]
   },
   "List<ClipData> GetClipsForUser(string userName, DateTime start, DateTime end)": {
-    "prefix": ["GetClipsForUser"],
+    "prefix": ["CPHGetClipsForUser"],
     "body": [
       "List<ClipData> GetClipsForUser(${1:string userName}, ${2:DateTime start}, ${3:DateTime end});"
     ]
   },
   "List<ClipData> GetClipsForUser(string userName, DateTime start, DateTime end, int count)": {
-    "prefix": ["GetClipsForUser"],
+    "prefix": ["CPHGetClipsForUser"],
     "body": [
       "List<ClipData> GetClipsForUser(${1:string userName}, ${2:DateTime start}, ${3:DateTime end}, ${4:int count});"
     ]
   },
   "List<ClipData> GetClipsForUser(string userName, TimeSpan duration)": {
-    "prefix": ["GetClipsForUser"],
+    "prefix": ["CPHGetClipsForUser"],
     "body": [
       "List<ClipData> GetClipsForUser(${1:string userName}, ${2:TimeSpan duration});"
     ]
   },
   "List<ClipData> GetClipsForUser(string userName, TimeSpan duration, int count)": {
-    "prefix": ["GetClipsForUser"],
+    "prefix": ["CPHGetClipsForUser"],
     "body": [
       "List<ClipData> GetClipsForUser(${1:string userName}, ${2:TimeSpan duration}, ${3:int count});"
     ]
   },
   "List<ClipData> GetClipsForGame(int gameId, int count)": {
-    "prefix": ["GetClipsForGame"],
+    "prefix": ["CPHGetClipsForGame"],
     "body": [
       "List<ClipData> GetClipsForGame(${1:int gameId}, ${2:int count});"
     ]
   },
   "List<ClipData> GetClipsForGame(int gameId, DateTime start, DateTime end)": {
-    "prefix": ["GetClipsForGame"],
+    "prefix": ["CPHGetClipsForGame"],
     "body": [
       "List<ClipData> GetClipsForGame(${1:int gameId}, ${2:DateTime start}, ${3:DateTime end});"
     ]
   },
   "List<ClipData> GetClipsForGame(int gameId, DateTime start, DateTime end, int count)": {
-    "prefix": ["GetClipsForGame"],
+    "prefix": ["CPHGetClipsForGame"],
     "body": [
       "List<ClipData> GetClipsForGame(${1:int gameId}, ${2:DateTime start}, ${3:DateTime end}, ${4:int count});"
     ]
   },
   "List<ClipData> GetClipsForGame(int gameId, TimeSpan duration)": {
-    "prefix": ["GetClipsForGame"],
+    "prefix": ["CPHGetClipsForGame"],
     "body": [
       "List<ClipData> GetClipsForGame(${1:int gameId}, ${2:TimeSpan duration});"
     ]
   },
   "List<ClipData> GetClipsForGame(int gameId, TimeSpan duration, int count)": {
-    "prefix": ["GetClipsForGame"],
+    "prefix": ["CPHGetClipsForGame"],
     "body": [
       "List<ClipData> GetClipsForGame(${1:int gameId}, ${2:TimeSpan duration}, ${3:int count});"
     ]
