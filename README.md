@@ -1,6 +1,6 @@
 ## Features
 
-Basic snippets of Streamer.bot v0.1.18
+Basic snippets for Streamer.bot v0.1.18
 
 ## Release Notes
 
@@ -8,4 +8,4 @@ Basic snippets of Streamer.bot v0.1.18
 
 Initial release
 
-This release includes all basic snippets of v0.1.18 of Streamer.bot
+This release includes all basic snippets for v0.1.18 of Streamer.bot

@@ -1,9 +1,8 @@
 # Change Log
-
-All notable changes to the "streamerbot-csharp-intellisense" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
 ## [Unreleased]
+
+- Upcoming Changes
+
+## [1.0.0]
 
 - Initial release
