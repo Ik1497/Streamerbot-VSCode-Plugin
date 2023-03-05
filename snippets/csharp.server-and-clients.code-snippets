@@ -1,0 +1,92 @@
+{
+  "void WebsocketBroadcastString()": {
+    "prefix": ["CPHWebsocketBroadcastString"],
+    "body": [
+      "CPH.WebsocketBroadcastString(${1:string data});"
+    ]
+  },
+  "void WebsocketBroadcastJson()": {
+    "prefix": ["CPHWebsocketBroadcastJson"],
+    "body": [
+      "CPH.WebsocketBroadcastJson(${1:string data});"
+    ]
+  },
+  "void WebsocketConnect()": {
+    "prefix": ["CPHWebsocketConnect"],
+    "body": [
+      "CPH.WebsocketConnect(${1:int connection = 0});"
+    ]
+  },
+  "void WebsocketDisconnect()": {
+    "prefix": ["CPHWebsocketDisconnect"],
+    "body": [
+      "CPH.WebsocketDisconnect(${1:int connection = 0});"
+    ]
+  },
+  "bool WebsocketIsConnected()": {
+    "prefix": ["CPHWebsocketIsConnected"],
+    "body": [
+      "CPH.WebsocketIsConnected(${1:int connection = 0});"
+    ]
+  },
+  "void WebsocketSend()": {
+    "prefix": ["CPHWebsocketSend"],
+    "body": [
+      "CPH.WebsocketSend(${1:string data}, ${2:int connection = 0});"
+    ]
+  },
+  "void WebsocketSend() (bytes)": {
+    "prefix": ["CPHWebsocketSend"],
+    "body": [
+      "CPH.WebsocketSend(${1:byte[] data}, ${2:int connection = 0});"
+    ]
+  },
+  "void WebsocketCustomServerStart()": {
+    "prefix": ["CPHWebsocketCustomServerStart"],
+    "body": [
+      "CPH.WebsocketCustomServerStart(${1:int connection = 0});"
+    ]
+  },
+  "void WebsocketCustomServerStop()": {
+    "prefix": ["CPHWebsocketCustomServerStop"],
+    "body": [
+      "CPH.WebsocketCustomServerStop(${1:int connection = 0});"
+    ]
+  },
+  "bool WebsocketCustomServerIsListening()": {
+    "prefix": ["CPHWebsocketCustomServerIsListening"],
+    "body": [
+      "CPH.WebsocketCustomServerIsListening(${1:int connection = 0});"
+    ]
+  },
+  "void WebsocketCustomServerCloseAllSessions()": {
+    "prefix": ["CPHWebsocketCustomServerCloseAllSessions"],
+    "body": [
+      "CPH.WebsocketCustomServerCloseAllSessions(${1:int connection = 0});"
+    ]
+  },
+  "void WebsocketCustomServerCloseSession()": {
+    "prefix": ["CPHWebsocketCustomServerCloseSession"],
+    "body": [
+      "CPH.WebsocketCustomServerCloseSession(${1:string sessionId}, ${2:int connection = 0});"
+    ]
+  },
+  "void WebsocketCustomServerBroadcast()": {
+    "prefix": ["CPHWebsocketCustomServerBroadcast"],
+    "body": [
+      "CPH.WebsocketCustomServerBroadcast(${1:string data}, ${2:string sessionId}, ${3:int connection = 0});"
+    ]
+  },
+  "int WebsocketCustomServerGetConnectionByName()": {
+    "prefix": ["CPHWebsocketCustomServerGetConnectionByName"],
+    "body": [
+      "CPH.WebsocketCustomServerGetConnectionByName(${1:string name});"
+    ]
+  },
+  "int BroadcastUdp()": {
+    "prefix": ["CPHBroadcastUdp"],
+    "body": [
+      "CPH.BroadcastUdp(${1:int port}, ${2:object data});"
+    ]
+  }
+}

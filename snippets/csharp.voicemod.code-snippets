@@ -1,0 +1,62 @@
+{
+  "void VoiceModSelectVoice()": {
+    "prefix": ["CPHVoiceModSelectVoice"],
+    "body": [
+      "CPH.VoiceModSelectVoice(${1:string voiceId});"
+    ]
+  },
+  "bool VoiceModVoiceChangerOn()": {
+    "prefix": ["CPHVoiceModVoiceChangerOn"],
+    "body": [
+      "CPH.VoiceModVoiceChangerOn();"
+    ]
+  },
+  "bool VoiceModVoiceChangerOff()": {
+    "prefix": ["CPHVoiceModVoiceChangerOff"],
+    "body": [
+      "CPH.VoiceModVoiceChangerOff();"
+    ]
+  },
+  "bool VoiceModHearMyVoiceOn()": {
+    "prefix": ["CPHVoiceModHearMyVoiceOn"],
+    "body": [
+      "CPH.VoiceModHearMyVoiceOn();"
+    ]
+  },
+  "bool VoiceModHearMyVoiceOff()": {
+    "prefix": ["CPHVoiceModHearMyVoiceOff"],
+    "body": [
+      "CPH.VoiceModHearMyVoiceOff();"
+    ]
+  },
+  "void VoiceModCensorOn()": {
+    "prefix": ["CPHVoiceModCensorOn"],
+    "body": [
+      "CPH.VoiceModCensorOn();"
+    ]
+  },
+  "void VoiceModCensorOff()": {
+    "prefix": ["CPHVoiceModCensorOff"],
+    "body": [
+      "CPH.VoiceModCensorOff();"
+    ]
+  },
+  "string VoiceModGetCurrentVoice()": {
+    "prefix": ["CPHVoiceModGetCurrentVoice"],
+    "body": [
+      "CPH.VoiceModGetCurrentVoice();"
+    ]
+  },
+  "bool VoiceModGetVoiceChangerStatus()": {
+    "prefix": ["CPHVoiceModGetVoiceChangerStatus"],
+    "body": [
+      "CPH.VoiceModGetVoiceChangerStatus();"
+    ]
+  },
+  "bool VoiceModGetHearMyselfStatus()": {
+    "prefix": ["CPHVoiceModGetHearMyselfStatus"],
+    "body": [
+      "CPH.VoiceModGetHearMyselfStatus();"
+    ]
+  }
+}

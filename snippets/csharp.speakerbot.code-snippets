@@ -1,0 +1,8 @@
+{
+  "int TtsSpeak()": {
+    "prefix": ["CPHTtsSpeak"],
+    "body": [
+      "CPH.TtsSpeak(${1:string voiceAlias}, ${2:string message}, ${3:bool badWordFilter = false});"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "void LumiaSetToDefault()": {
+    "prefix": ["CPHLumiaSetToDefault"],
+    "body": [
+      "CPH.LumiaSetToDefault();"
+    ]
+  },
+  "void LumiaSendCommand()": {
+    "prefix": ["CPHLumiaSendCommand"],
+    "body": [
+      "CPH.LumiaSendCommand(${1:string command});"
+    ]
+  }
+}

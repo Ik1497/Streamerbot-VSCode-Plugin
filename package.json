@@ -1,0 +1,78 @@
+{
+  "name": "streamerbot",
+  "displayName": "Streamer.bot C# Intellisense",
+  "description": "Get Visual Studio Code Streamer.bot C# snippets to make your development easier",
+  "publisher": "Ik1497",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ik1497/Streamerbot-VSCode-Plugin"
+  },
+  "icon": "logo.png",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.general.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.commands.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.global-variables.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.server-and-clients.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.groups.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.twitch.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.twitch-classes.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.youtube.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.obs-studio.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.streamlabs-desktop.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.speakerbot.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.voicemod.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.lumia-stream.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.discord.code-snippets"
+      }
+    ]
+  }
+}

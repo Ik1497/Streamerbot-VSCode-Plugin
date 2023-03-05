@@ -1,0 +1,56 @@
+{
+  "bool UserIdInGroup()": {
+    "prefix": ["CPHUserIdInGroup"],
+    "body": [
+      "CPH.UserIdInGroup(${1:string userId}, ${2:string groupName});"
+    ]
+  },
+  "bool UserInGroup() (user id)": {
+    "prefix": ["CPHUserInGroupId"],
+    "body": [
+      "CPH.UserInGroup(${1:int userId}, ${2:string groupName});"
+    ]
+  },
+  "bool UserInGroup() (username)": {
+    "prefix": ["CPHUserInGroupName"],
+    "body": [
+      "CPH.UserInGroup(${1:string userName}, ${2:string groupName});"
+    ]
+  },
+  "bool AddUserIdToGroup()": {
+    "prefix": ["CPHAddUserIdToGroup"],
+    "body": [
+      "CPH.AddUserIdToGroup(${1:string userId}, ${2:string groupName});"
+    ]
+  },
+  "bool AddUserToGroup() (user id)": {
+    "prefix": ["CPHAddUserToGroup"],
+    "body": [
+      "CPH.AddUserToGroup(${1:int userId}, ${2:string groupName});"
+    ]
+  },
+  "bool AddUserToGroup() (username)": {
+    "prefix": ["CPHAddUserToGroup"],
+    "body": [
+      "CPH.AddUserToGroup(${1:string userName}, ${2:string groupName});"
+    ]
+  },
+  "bool RemoveUserIdFromGroup()": {
+    "prefix": ["CPHAddUserIdToGroup"],
+    "body": [
+      "CPH.AddUserIdToGroup(${1:string userId}, ${2:string groupName});"
+    ]
+  },
+  "bool RemoveUserFromGroup() (user id)": {
+    "prefix": ["CPHAddUserToGroup"],
+    "body": [
+      "CPH.AddUserToGroup(${1:int userId}, ${2:string groupName});"
+    ]
+  },
+  "bool RemoveUserFromGroup() (username)": {
+    "prefix": ["CPHAddUserToGroup"],
+    "body": [
+      "CPH.AddUserToGroup(${1:string userName}, ${2:string groupName});"
+    ]
+  }
+}

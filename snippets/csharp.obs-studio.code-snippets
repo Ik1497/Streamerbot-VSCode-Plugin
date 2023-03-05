@@ -1,0 +1,368 @@
+{
+  "bool ObsIsConnected()": {
+    "prefix": ["CPHObsIsConnected"],
+    "body": [
+      "CPH.ObsIsConnected(${1:int connection = 0});"
+    ]
+  },
+  "bool ObsConnect()": {
+    "prefix": ["CPHObsConnect"],
+    "body": [
+      "CPH.ObsConnect(${1:int connection = 0});"
+    ]
+  },
+  "void ObsDisconnect()": {
+    "prefix": ["CPHObsDisconnect"],
+    "body": [
+      "CPH.ObsDisconnect(${1:int connection = 0});"
+    ]
+  },
+  "int ObsGetConnectionByName()": {
+    "prefix": ["CPHObsGetConnectionByName"],
+    "body": [
+      "CPH.ObsGetConnectionByName(${1:string name});"
+    ]
+  },
+  "bool ObsIsStreaming()": {
+    "prefix": ["CPHObsIsStreaming"],
+    "body": [
+      "CPH.ObsIsStreaming(${1:int connection = 0});"
+    ]
+  },
+  "void ObsStopStreaming()": {
+    "prefix": ["CPHObsStopStreaming"],
+    "body": [
+      "CPH.ObsStopStreaming(${1:int connection = 0});"
+    ]
+  },
+  "bool ObsIsRecording()": {
+    "prefix": ["CPHObsIsRecording"],
+    "body": [
+      "CPH.ObsIsRecording(${1:int connection = 0});"
+    ]
+  },
+  "void ObsStartRecording()": {
+    "prefix": ["CPHObsStartRecording"],
+    "body": [
+      "CPH.ObsStartRecording(${1:int connection = 0});"
+    ]
+  },
+  "void ObsStopRecording()": {
+    "prefix": ["CPHObsStopRecording"],
+    "body": [
+      "CPH.ObsStopRecording(${1:int connection = 0});"
+    ]
+  },
+  "void ObsPauseRecording()": {
+    "prefix": ["CPHObsPauseRecording"],
+    "body": [
+      "CPH.ObsPauseRecording(${1:int connection = 0});"
+    ]
+  },
+  "void ObsResumeRecording()": {
+    "prefix": ["CPHObsResumeRecording"],
+    "body": [
+      "CPH.ObsResumeRecording(${1:int connection = 0});"
+    ]
+  },
+  "void ObsSetScene()": {
+    "prefix": ["CPHObsSetScene"],
+    "body": [
+      "CPH.ObsSetScene(${1:string sceneName}, ${2:int connection = 0});"
+    ]
+  },
+  "string ObsGetCurrentScene()": {
+    "prefix": ["CPHObsGetCurrentScene"],
+    "body": [
+      "CPH.ObsGetCurrentScene(${1:int connection = 0});"
+    ]
+  },
+  "void ObsSetSourceVisibility()": {
+    "prefix": ["CPHObsSetSourceVisibility"],
+    "body": [
+      "CPH.ObsSetSourceVisibility(${1:string scene}, ${2:string source}, ${3:bool visible}, ${4:int connection = 0});"
+    ]
+  },
+  "bool ObsIsSourceVisible()": {
+    "prefix": ["CPHObsIsSourceVisible"],
+    "body": [
+      "CPH.ObsIsSourceVisible(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsShowSource()": {
+    "prefix": ["CPHObsShowSource"],
+    "body": [
+      "CPH.ObsShowSource(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "string ObsSetRandomGroupSourceVisible()": {
+    "prefix": ["CPHObsSetRandomGroupSourceVisible"],
+    "body": [
+      "CPH.ObsSetRandomGroupSourceVisible(${1:string scene}, ${2:string groupName}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsHideSource()": {
+    "prefix": ["CPHObsHideSource"],
+    "body": [
+      "CPH.ObsHideSource(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsHideGroupsSources()": {
+    "prefix": ["CPHObsHideGroupsSources"],
+    "body": [
+      "CPH.ObsHideGroupsSources(${1:string scene}, ${2:string groupName}, ${3:int connection = 0});"
+    ]
+  },
+  "List<string> ObsGetGroupSources()": {
+    "prefix": ["CPHObsGetGroupSources"],
+    "body": [
+      "CPH.ObsGetGroupSources(${1:string scene}, ${2:string groupName}, ${3:int connection = 0});"
+    ]
+  },
+  "string ObsGetSceneItemProperties()": {
+    "prefix": ["CPHObsGetSceneItemProperties"],
+    "body": [
+      "CPH.ObsGetSceneItemProperties(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsSetBrowserSource()": {
+    "prefix": ["CPHObsSetBrowserSource"],
+    "body": [
+      "CPH.ObsSetBrowserSource(${1:string scene}, ${2:string source}, ${3:string url}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetGdiText()": {
+    "prefix": ["CPHObsSetGdiText"],
+    "body": [
+      "CPH.ObsSetGdiText(${1:string scene}, ${2:string source}, ${3:string text}, ${4:int connection = 0});"
+    ]
+  },
+  "bool ObsIsFilterEnabled() (scene)": {
+    "prefix": ["CPHObsIsFilterEnabled"],
+    "body": [
+      "CPH.ObsIsFilterEnabled(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "bool ObsIsFilterEnabled()": {
+    "prefix": ["CPHObsIsFilterEnabled"],
+    "body": [
+      "CPH.ObsIsFilterEnabled(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetFilterState() (scene)": {
+    "prefix": ["CPHObsSetFilterState"],
+    "body": [
+      "CPH.ObsSetFilterState(${1:string scene}, ${2:string filterName}, ${3:int state}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetFilterState()": {
+    "prefix": ["CPHObsSetFilterState"],
+    "body": [
+      "CPH.ObsSetFilterState(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int state}, ${5:int connection = 0});"
+    ]
+  },
+  "void ObsShowFilter() (scene)": {
+    "prefix": ["CPHObsShowFilter"],
+    "body": [
+      "CPH.ObsShowFilter(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsShowFilter()": {
+    "prefix": ["CPHObsShowFilter"],
+    "body": [
+      "CPH.ObsShowFilter(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsHideFilter() (scene)": {
+    "prefix": ["CPHObsHideFilter"],
+    "body": [
+      "CPH.ObsHideFilter(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsHideFilter()": {
+    "prefix": ["CPHObsHideFilter"],
+    "body": [
+      "CPH.ObsHideFilter(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsToggleFilter() (scene)": {
+    "prefix": ["CPHObsToggleFilter"],
+    "body": [
+      "CPH.ObsToggleFilter(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsToggleFilter()": {
+    "prefix": ["CPHObsToggleFilter"],
+    "body": [
+      "CPH.ObsToggleFilter(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetRandomFilterState() (scene)": {
+    "prefix": ["CPHObsSetRandomFilterState"],
+    "body": [
+      "CPH.ObsSetRandomFilterState(${1:string scene}, ${2:int state}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetRandomFilterState()": {
+    "prefix": ["CPHObsSetRandomFilterState"],
+    "body": [
+      "CPH.ObsSetRandomFilterState(${1:string scene}, ${2:string source}, ${3:int state}, ${4:string filterName}, ${5:int connection = 0});"
+    ]
+  },
+  "void ObsSetSourceMuteState()": {
+    "prefix": ["CPHObsSetSourceMuteState"],
+    "body": [
+      "CPH.ObsSetSourceMuteState(${1:string scene}, ${2:string source}, ${3:int state}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSourceMute()": {
+    "prefix": ["CPHObsSourceMute"],
+    "body": [
+      "CPH.ObsSourceMute(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsSourceUnMute()": {
+    "prefix": ["CPHObsSourceUnMute"],
+    "body": [
+      "CPH.ObsSourceUnMute(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsSourceMuteToggle()": {
+    "prefix": ["CPHObsSourceMuteToggle"],
+    "body": [
+      "CPH.ObsSourceMuteToggle(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "string ObsSendRaw()": {
+    "prefix": ["CPHObsSendRaw"],
+    "body": [
+      "CPH.ObsSendRaw(${1:string requestType}, ${2:string data}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsHideSourcesFilters()": {
+    "prefix": ["CPHObsHideSourcesFilters"],
+    "body": [
+      "CPH.ObsHideSourcesFilters(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsHideScenesFilters()": {
+    "prefix": ["CPHObsHideScenesFilters"],
+    "body": [
+      "CPH.ObsHideScenesFilters(${1:string scene}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsSetMediaState()": {
+    "prefix": ["CPHObsSetMediaState"],
+    "body": [
+      "CPH.ObsSetMediaState(${1:string scene}, ${2:string source}, ${3:int state}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsMediaPlay()": {
+    "prefix": ["CPHObsMediaPlay"],
+    "body": [
+      "CPH.ObsMediaPlay(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsMediaPause()": {
+    "prefix": ["CPHObsMediaPause"],
+    "body": [
+      "CPH.ObsMediaPause(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsMediaRestart()": {
+    "prefix": ["CPHObsMediaRestart"],
+    "body": [
+      "CPH.ObsMediaRestart(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsMediaStop()": {
+    "prefix": ["CPHObsMediaStop"],
+    "body": [
+      "CPH.ObsMediaStop(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsMediaNext()": {
+    "prefix": ["CPHObsMediaNext"],
+    "body": [
+      "CPH.ObsMediaNext(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsMediaPrevious()": {
+    "prefix": ["CPHObsMediaPrevious"],
+    "body": [
+      "CPH.ObsMediaPrevious(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "long ObsConvertRgb()": {
+    "prefix": ["CPHObsConvertRgb"],
+    "body": [
+      "CPH.ObsConvertRgb(${1:int a}, ${2:int r}, ${3:int g}, ${4:int b});"
+    ]
+  },
+  "long ObsConvertColorHex()": {
+    "prefix": ["CPHObsConvertRgb"],
+    "body": [
+      "CPH.ObsConvertRgb(${1:string colorHex});"
+    ]
+  },
+  "void ObsSetColorSourceColor() (ARGB)": {
+    "prefix": ["CPHObsMediaPrevious"],
+    "body": [
+      "CPH.ObsMediaPrevious(${1:string scene}, ${2:string source}, ${3:int a,} ${4:int r}, ${5:int g}, ${6:int b}, ${7:int connection = 0});"
+    ]
+  },
+  "void ObsSetColorSourceColor() (HEX)": {
+    "prefix": ["CPHObsMediaPrevious"],
+    "body": [
+      "CPH.ObsMediaPrevious(${1:string scene}, ${2:string source}, ${3:string hexColor}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetColorSourceRandomColor()": {
+    "prefix": ["CPHObsMediaPrevious"],
+    "body": [
+      "CPH.ObsMediaPrevious(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsSetReplayBufferState()": {
+    "prefix": ["CPHObsSetReplayBufferState"],
+    "body": [
+      "CPH.ObsSetReplayBufferState(${1:int state}, ${2:int connection = 0});"
+    ]
+  },
+  "void ObsReplayBufferStart()": {
+    "prefix": ["CPHObsReplayBufferStart"],
+    "body": [
+      "CPH.ObsReplayBufferStart(${1:int connection = 0});"
+    ]
+  },
+  "void ObsReplayBufferStop()": {
+    "prefix": ["CPHObsReplayBufferStop"],
+    "body": [
+      "CPH.ObsReplayBufferStop(${1:int connection = 0});"
+    ]
+  },
+  "void ObsReplayBufferSave()": {
+    "prefix": ["CPHObsReplayBufferSave"],
+    "body": [
+      "CPH.ObsReplayBufferSave(${1:int connection = 0});"
+    ]
+  },
+  "void ObsSetMediaSourceFile()": {
+    "prefix": ["CPHObsSetMediaSourceFile"],
+    "body": [
+      "CPH.ObsSetMediaSourceFile(${1:string scene}, ${2:string source}, ${3:string file}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetImageSourceFile()": {
+    "prefix": ["CPHObsSetImageSourceFile"],
+    "body": [
+      "CPH.ObsSetImageSourceFile(${1:string scene}, ${2:string source}, ${3:string file}, ${4:int connection = 0});"
+    ]
+  },
+  "bool ObsTakeScreenshot()": {
+    "prefix": ["CPHObsTakeScreenshot"],
+    "body": [
+      "CPH.ObsTakeScreenshot(${1:string scene}, ${2:string source}, ${3:string path}, ${4:int quality = -1}, ${5:int connection = 0});"
+    ]
+  }
+}
