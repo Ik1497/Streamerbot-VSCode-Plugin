@@ -2,7 +2,7 @@
   "void SendYouTubeMessage()": {
     "prefix": ["CPHSendYouTubeMessage"],
     "body": [
-      "CPH.SendYouTubeMessage(${string message});"
+      "CPH.SendYouTubeMessage(${1:string message});"
     ]
   }
 }

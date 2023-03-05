@@ -3,7 +3,7 @@
   "displayName": "Streamer.bot C# Snippets",
   "description": "Get Visual Studio Code Streamer.bot C# snippets to make your development easier",
   "publisher": "Ik1497",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/Ik1497/Streamerbot-VSCode-Plugin"
@@ -17,6 +17,10 @@
   ],
   "contributes": {
     "snippets": [
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.using-directives.code-snippets"
+      },
       {
         "language": "csharp",
         "path": "./snippets/csharp.general.code-snippets"
@@ -43,7 +47,7 @@
       },
       {
         "language": "csharp",
-        "path": "./snippets/csharp.twitch-classes.code-snippets"
+        "path": "./snippets/csharp.twitch-templates.code-snippets"
       },
       {
         "language": "csharp",

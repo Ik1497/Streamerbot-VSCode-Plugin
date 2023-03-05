@@ -1,0 +1,17 @@
+{
+  "Twitch Present Viewers Template": {
+    "prefix": ["CPHTemplateTwitchPresentViewers"],
+    "body": [
+      "var users = (List<Dictionary<string, object>>)args[\"users\"];",
+      "",
+      "for (int i = 0; i < users.Count; i++)",
+      "{",
+      "    int id = Convert.ToInt32(users[i][\"id\"]);",
+      "    string userName = users[i][\"userName\"].ToString();",
+      "    string display = users[i][\"display\"].ToString();",
+      "    int role = Convert.ToInt32(users[i][\"role\"]);",
+      "    bool isSubscribed = Convert.ToBoolean(users[i][\"isSubscribed\"]);",
+      "}"
+    ]
+  }
+}

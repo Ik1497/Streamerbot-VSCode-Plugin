@@ -1,0 +1,8 @@
+{
+  "using Streamer.bot.Common.Events": {
+    "prefix": ["using Streamer.bot.Common.Events"],
+    "body": [
+      "using Streamer.bot.Common.Events"
+    ]
+  }
+}
