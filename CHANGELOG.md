@@ -1,4 +1,10 @@
 # Change Log
+## [1.0.2]
+
+- Add all variable types to use arguments from the args dictionary
+- Add a the template that you get when opening a new Execute C# Code Sub-Action, use `!`, `!!!`, `Template`
+- Small fix to Twitch Present Viewers Template
+
 ## [1.0.1]
 
 - Fix YouTube `SendYouTubeMessage` methods

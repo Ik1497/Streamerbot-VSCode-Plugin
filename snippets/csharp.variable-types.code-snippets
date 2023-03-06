@@ -1,0 +1,44 @@
+{
+  "var variable = args[\"variable\"];": {
+    "prefix": ["var variable = args[\"variable\"];"],
+    "body": [
+      "var ${1:variable} = args[\"${2:variable}\"];"
+    ]
+  },
+  "string text = args[\"text\"].ToString();": {
+    "prefix": ["string text = args[\"text\"].ToString();"],
+    "body": [
+      "string ${1:text} = args[\"${2:text}\"].ToString();"
+    ]
+  },
+  "int number = Convert.ToInt32(args[\"number\"].ToString());": {
+    "prefix": ["int number = Convert.ToInt32(args[\"number\"].ToString());"],
+    "body": [
+      "int {1:number} = Convert.ToInt32(args[\"{2:number}\"].ToString());"
+    ]
+  },
+  "bool boolean = Convert.ToBoolean(args[\"boolean\"]);": {
+    "prefix": ["bool boolean = Convert.ToBoolean(args[\"boolean\"]);"],
+    "body": [
+      "bool ${1:boolean} = Convert.ToBoolean(args[\"${2:boolean}\"]);"
+    ]
+  },
+  "float sevenDecimal = float.Parse(args[\"sevenDecimal\"].ToString());": {
+    "prefix": ["float sevenDecimal = float.Parse(args[\"sevenDecimal\"].ToString());"],
+    "body": [
+      "float ${1:sevenDecimal} = float.Parse(args[\"${2:sevenDecimal}\"].ToString());"
+    ]
+  },
+  "double fourteenDecimal = Convert.ToDouble(args[\"fourteenDecimal\"]);": {
+    "prefix": ["double fourteenDecimal = Convert.ToDouble(args[\"fourteenDecimal\"]);"],
+    "body": [
+      "double ${1:fourteenDecimal} = Convert.ToDouble(args[\"${2:fourteenDecimal}\"]);"
+    ]
+  },
+  "decimal twentyEightDecimal = Convert.ToDecimal(args[\"twentyEightDecimal\"]);": {
+    "prefix": ["decimal twentyEightDecimal = Convert.ToDecimal(args[\"twentyEightDecimal\"]);"],
+    "body": [
+      "decimal ${1stri:twentyEightDecimal} = Convert.ToDecimal(args[\"${2:twentyEightDecimal}\"]);"
+    ]
+  }
+}

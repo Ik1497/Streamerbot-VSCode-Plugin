@@ -1,0 +1,17 @@
+{
+  "Template": {
+    "prefix": ["!", "!!!", "Template"],
+    "body": [
+      "using System;",
+      "",
+      "public class CPHInline",
+      "{",
+      "    public bool Execute()",
+      "    {",
+      "        ${2:// your main code goes here}",
+      "        return true;",
+      "    }",
+      "}",
+    ]
+  }
+}

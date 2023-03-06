@@ -2,6 +2,7 @@
   "Twitch Present Viewers Template": {
     "prefix": ["CPHTemplateTwitchPresentViewers"],
     "body": [
+      "// using System.Collections.Generic;",
       "var users = (List<Dictionary<string, object>>)args[\"users\"];",
       "",
       "for (int i = 0; i < users.Count; i++)",
