@@ -3,6 +3,7 @@
     "prefix": ["CPHTemplateTwitchPresentViewers"],
     "body": [
       "// using System.Collections.Generic;",
+      "",
       "var users = (List<Dictionary<string, object>>)args[\"users\"];",
       "",
       "for (int i = 0; i < users.Count; i++)",
@@ -12,6 +13,19 @@
       "    string display = users[i][\"display\"].ToString();",
       "    int role = Convert.ToInt32(users[i][\"role\"]);",
       "    bool isSubscribed = Convert.ToBoolean(users[i][\"isSubscribed\"]);",
+      "}"
+    ]
+  },
+  "Twitch Tags Template": {
+    "prefix": ["CPHTemplateTwitchTags"],
+    "body": [
+      "// using System.Collections.Generic;",
+      "",
+      "var tags = (List<string>)args[\"tags\"];",
+      "",
+      "for (int i = 0; i < tags.Count; i++)",
+      "{",
+      "    string tag = tags[i].ToString();",
       "}"
     ]
   }

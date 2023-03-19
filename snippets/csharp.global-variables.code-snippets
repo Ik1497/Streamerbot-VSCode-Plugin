@@ -2,7 +2,7 @@
   "T GetGlobalVar<T>()": {
     "prefix": ["CPHGetGlobalVar"],
     "body": [
-      "CPH.GetGlobalVar<${1:T}>(${1:string varName}, ${2:bool persisted = true});"
+      "CPH.GetGlobalVar<${1:T}>(${2:string varName}, ${3:bool persisted = true});"
     ]
   },
   "void SetGlobalVar()": {
