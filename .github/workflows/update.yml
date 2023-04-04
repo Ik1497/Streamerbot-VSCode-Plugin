@@ -10,9 +10,8 @@ jobs:
         run: |
           npm install @vscode/vsce -g
           vsce package
-      - name: Archive production artifacts
+      - name: Add artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: dist-without-markdown
-          path: |
-            *.vsix
+          path: "*.vsix"
+          
