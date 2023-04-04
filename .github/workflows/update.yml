@@ -16,8 +16,3 @@ jobs:
           name: dist-without-markdown
           path: |
             *.vsix
-      - name: Archive code coverage results
-        uses: actions/upload-artifact@v3
-        with:
-          name: code-coverage-report
-          path: output/test/code-coverage.html
