@@ -38,7 +38,7 @@
   "decimal twentyEightDecimal = Convert.ToDecimal(args[\"twentyEightDecimal\"]);": {
     "prefix": ["decimal twentyEightDecimal = Convert.ToDecimal(args[\"twentyEightDecimal\"]);"],
     "body": [
-      "decimal ${1stri:twentyEightDecimal} = Convert.ToDecimal(args[\"${2:twentyEightDecimal}\"]);"
+      "decimal ${1:twentyEightDecimal} = Convert.ToDecimal(args[\"${2:twentyEightDecimal}\"]);"
     ]
   }
 }
