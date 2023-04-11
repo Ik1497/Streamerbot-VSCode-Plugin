@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.4]
+
+### Fixes
+
+- Fix typo in variable types
+
 ## [1.0.3]
 
 ### Fixes
