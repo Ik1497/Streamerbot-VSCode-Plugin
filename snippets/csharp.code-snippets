@@ -1,0 +1,2179 @@
+{
+  "int Between(int min, int max);": {
+    "prefix": "CPHBetween",
+    "description": "Get a value between two integers.",
+    "body": [
+      "CPH.Between(${1:int min}, ${2:int max});"
+    ]
+  },
+  "double NextDouble();": {
+    "prefix": "CPHNextDouble",
+    "description": "Get a random value between 0f and 1f.",
+    "body": [
+      "CPH.NextDouble();"
+    ]
+  },
+  "void Wait(int milliseconds);": {
+    "prefix": "CPHWait",
+    "description": "Wait for a specified amount of time.",
+    "body": [
+      "CPH.Wait(${1:int milliseconds});"
+    ]
+  },
+  "string UrlEncode(string text);": {
+    "prefix": "CPHUrlEncode",
+    "description": "Encode text for a URL.",
+    "body": [
+      "CPH.UrlEncode(${1:string text});"
+    ]
+  },
+  "string EscapeString(string text);": {
+    "prefix": "CPHEscapeString",
+    "description": "Escape a string.",
+    "body": [
+      "CPH.EscapeString(${1:string text});"
+    ]
+  },
+  "EventSource GetSource();": {
+    "prefix": "CPHGetSource",
+    "description": "Get the source for this action.",
+    "body": [
+      "CPH.GetSource();"
+    ]
+  },
+  "EventType GetEventType();": {
+    "prefix": "CPHGetEventType",
+    "description": "Get the event type for this action.",
+    "body": [
+      "CPH.GetEventType();"
+    ]
+  },
+  "bool RunAction(string actionName, bool runImmediately = true);": {
+    "prefix": "CPHRunAction",
+    "description": "Run an action.",
+    "body": [
+      "CPH.RunAction(${1:string actionName}, ${2:bool runImmediately = true});"
+    ]
+  },
+  "bool RunActionById(string actionId, bool runImmediately = true);": {
+    "prefix": "CPHRunActionById",
+    "description": "Run an action by id.",
+    "body": [
+      "CPH.RunActionById(${1:string actionId}, ${2:bool runImmediately = true});"
+    ]
+  },
+  "void DisableAction(string actionName);": {
+    "prefix": "CPHDisableAction",
+    "description": "Disable an action.",
+    "body": [
+      "CPH.DisableAction(${1:string actionName});"
+    ]
+  },
+  "void EnableAction(string actionName);": {
+    "prefix": "CPHEnableAction",
+    "description": "Enable an action.",
+    "body": [
+      "CPH.EnableAction(${1:string actionName});"
+    ]
+  },
+  "bool ActionExists(string actionName);": {
+    "prefix": "CPHActionExists",
+    "description": "Check if an action exists.",
+    "body": [
+      "CPH.ActionExists(${1:string actionName});"
+    ]
+  },
+  "void PauseActionQueue(string name);": {
+    "prefix": "CPHPauseActionQueue",
+    "description": "Pause an action queue.",
+    "body": [
+      "CPH.PauseActionQueue(${1:string name});"
+    ]
+  },
+  "void PauseAllActionQueues();": {
+    "prefix": "CPHPauseAllActionQueues",
+    "description": "Pause all action queues.",
+    "body": [
+      "CPH.PauseAllActionQueues();"
+    ]
+  },
+  "void ResumeActionQueue(string name, bool clear = false);": {
+    "prefix": "CPHResumeActionQueue",
+    "description": "Resume an action queue.",
+    "body": [
+      "CPH.ResumeActionQueue(${1:string name}, ${2:bool clear = false});"
+    ]
+  },
+  "void ResumeAllActionQueues(bool clear = false);": {
+    "prefix": "CPHResumeAllActionQueues",
+    "description": "Resume all action queues.",
+    "body": [
+      "CPH.ResumeAllActionQueues(${1:bool clear = false});"
+    ]
+  },
+  "void PlaySound(string fileName, float volume = 1.0, bool finishBeforeContinuing = false);": {
+    "prefix": "CPHPlaySound",
+    "description": "Play a sound from a file.",
+    "body": [
+      "CPH.PlaySound(${1:string fileName}, ${2:float volume = 1.0}, ${3:bool finishBeforeContinuing = false});"
+    ]
+  },
+  "void PlaySoundFromFolder(string path, float volume = 1.0, bool recursive = false, bool finishBeforeContinuing = false);": {
+    "prefix": "CPHPlaySoundFromFolder",
+    "description": "Play a random sound from a folder.",
+    "body": [
+      "CPH.PlaySoundFromFolder(${1:string path}, ${2:float volume = 1.0}, ${3:bool recursive = false}, ${4:bool finishBeforeContinuing = false});"
+    ]
+  },
+  "void KeyboardPress(string keyPress);": {
+    "prefix": "CPHKeyboardPress",
+    "description": "Press a keyboard key.",
+    "body": [
+      "CPH.KeyboardPress(${1:string keyPress});"
+    ]
+  },
+  "bool ExecuteMethod(string executeCode, string methodName);": {
+    "prefix": "CPHExecuteMethod",
+    "description": "Execute a method.",
+    "body": [
+      "CPH.ExecuteMethod(${1:string executeCode}, ${2:string methodName});"
+    ]
+  },
+  "void LogInfo(string logLine);": {
+    "prefix": "CPHLogInfo",
+    "description": "Add an information log to your log file.",
+    "body": [
+      "CPH.LogInfo(${1:string logLine});"
+    ]
+  },
+  "void LogDebug(string logLine);": {
+    "prefix": "CPHLogDebug",
+    "description": "Add a debug log to your log file.",
+    "body": [
+      "CPH.LogDebug(${1:string logLine});"
+    ]
+  },
+  "void LogVerbose(string logLine);": {
+    "prefix": "CPHLogVerbose",
+    "description": "Add a verbose log to your log file.",
+    "body": [
+      "CPH.LogVerbose(${1:string logLine});"
+    ]
+  },
+  "void LogWarn(string logLine);": {
+    "prefix": "CPHLogWarn",
+    "description": "Add a warning log to your log file.",
+    "body": [
+      "CPH.LogWarn(${1:string logLine});"
+    ]
+  },
+  "void LogError(string logLine);": {
+    "prefix": "CPHLogError",
+    "description": "Add an error log to your log file.",
+    "body": [
+      "CPH.LogError(${1:string logLine});"
+    ]
+  },
+  "void AddToCredits(string section, string value, bool json = true);": {
+    "prefix": "CPHAddToCredits",
+    "description": "Add data to your credits.",
+    "body": [
+      "CPH.AddToCredits(${1:string section}, ${2:string value}, ${3:bool json = true});"
+    ]
+  },
+  "void ResetCredits();": {
+    "prefix": "CPHResetCredits",
+    "description": "Reset your credits.",
+    "body": [
+      "CPH.ResetCredits();"
+    ]
+  },
+  "void ResetFirstWords();": {
+    "prefix": "CPHResetFirstWords",
+    "description": "Reset your first words.",
+    "body": [
+      "CPH.ResetFirstWords();"
+    ]
+  },
+  "void DisableTimer(string timerName);": {
+    "prefix": "CPHDisableTimer",
+    "description": "Disable a timer.",
+    "body": [
+      "CPH.DisableTimer(${1:string timerName});"
+    ]
+  },
+  "void EnableTimer(string timerName);": {
+    "prefix": "CPHEnableTimer",
+    "description": "Enable a timer.",
+    "body": [
+      "CPH.EnableTimer(${1:string timerName});"
+    ]
+  },
+  "void SetArgument(string variableName, object value);": {
+    "prefix": "CPHSetArgument",
+    "description": "Set an argument to use in the upcoming Sub-Actions.",
+    "body": [
+      "CPH.SetArgument(${1:string variableName}, ${2:object value});"
+    ]
+  },
+  "T GetGlobalVar(string varName, bool persisted = true);": {
+    "prefix": "CPHGetGlobalVar",
+    "description": "Get a global variable.",
+    "body": [
+      "CPH.GetGlobalVar<T>(${1:string varName}, ${2:bool persisted = true});"
+    ]
+  },
+  "void SetGlobalVar(string varName, object value, bool persisted = true);": {
+    "prefix": "CPHSetGlobalVar",
+    "description": "Set a global variable.",
+    "body": [
+      "CPH.SetGlobalVar(${1:string varName}, ${2:object value}, ${3:bool persisted = true});"
+    ]
+  },
+  "void UnsetGlobalVar(string varName, bool persisted = true);": {
+    "prefix": "CPHUnsetGlobalVar",
+    "description": "Unset a global variable.",
+    "body": [
+      "CPH.UnsetGlobalVar(${1:string varName}, ${2:bool persisted = true});"
+    ]
+  },
+  "T GetTwitchUserVar(string userName, string varName, bool persisted = true);": {
+    "prefix": "CPHGetTwitchUserVar",
+    "description": "Get a Twitch user globale variable.",
+    "body": [
+      "CPH.GetTwitchUserVar<T>(${1:string userName}, ${2:string varName}, ${3:bool persisted = true});"
+    ]
+  },
+  "void SetTwitchUserVar(string userName, string varName, object value, bool persisted = true);": {
+    "prefix": "CPHSetTwitchUserVar",
+    "description": "Set a Twitch user global variable.",
+    "body": [
+      "CPH.SetTwitchUserVar(${1:string userName}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
+    ]
+  },
+  "void UnsetTwitchUserVar(string userName, string varName, bool persisted = true);": {
+    "prefix": "CPHUnsetTwitchUserVar",
+    "description": "Unset a Twitch user global variable.",
+    "body": [
+      "CPH.UnsetTwitchUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = true});"
+    ]
+  },
+  "void UnsetTwitchUser(string userName, bool persisted = true);": {
+    "prefix": "CPHUnsetTwitchUser",
+    "description": "Unset a Twitch user's global variables.",
+    "body": [
+      "CPH.UnsetTwitchUser(${1:string userName}, ${2:bool persisted = true});"
+    ]
+  },
+  "T GetYouTubeUserVar(string userName, string varName, bool persisted = true);": {
+    "prefix": "CPHGetYouTubeUserVar",
+    "description": "Get a YouTube user globale variable.",
+    "body": [
+      "CPH.GetYouTubeUserVar<T>(${1:string userName}, ${2:string varName}, ${3:bool persisted = true});"
+    ]
+  },
+  "void SetYouTubeUserVar(string userName, string varName, object value, bool persisted = true);": {
+    "prefix": "CPHSetYouTubeUserVar",
+    "description": "Set a YouTube user global variable.",
+    "body": [
+      "CPH.SetYouTubeUserVar(${1:string userName}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
+    ]
+  },
+  "void UnsetYouTubeUserVar(string userName, string varName, bool persisted = true);": {
+    "prefix": "CPHUnsetYouTubeUserVar",
+    "description": "Unset a YouTube user global variable.",
+    "body": [
+      "CPH.UnsetYouTubeUserVar(${1:string userName}, ${2:string varName}, ${3:bool persisted = true});"
+    ]
+  },
+  "void UnsetYouTubeUser(string userName, bool persisted = true);": {
+    "prefix": "CPHUnsetYouTubeUser",
+    "description": "Unset a YouTube user's global variables.",
+    "body": [
+      "CPH.UnsetYouTubeUser(${1:string userName}, ${2:bool persisted = true});"
+    ]
+  },
+  "bool UserIdInGroup(string userId, string groupName);": {
+    "prefix": "CPHUserIdInGroup",
+    "description": "Check if a user is in a group by id.",
+    "body": [
+      "CPH.UserIdInGroup(${1:string userId}, ${2:string groupName});"
+    ]
+  },
+  "bool ClearUsersFromGroup(string groupName);": {
+    "prefix": "CPHClearUsersFromGroup",
+    "description": "Clear all the users from a group.",
+    "body": [
+      "CPH.ClearUsersFromGroup(${1:string groupName});"
+    ]
+  },
+  "bool UserInGroup(int userId, string groupName);": {
+    "prefix": "CPHTwitchUserInGroup",
+    "description": "Check if a user is in a group.",
+    "body": [
+      "CPH.UserInGroup(${1:int userId}, ${2:string groupName});"
+    ]
+  },
+  "bool UserInGroup(string userId, string groupName);": {
+    "prefix": "CPHYouTubeUserInGroup",
+    "description": "Check if a user is in a group.",
+    "body": [
+      "CPH.UserInGroup(${1:string userId}, ${2:string groupName});"
+    ]
+  },
+  "bool AddUserIdToGroup(string userId, string groupName);": {
+    "prefix": "CPHAddUserIdToGroup",
+    "description": "Add a user to a group by id.",
+    "body": [
+      "CPH.AddUserIdToGroup(${1:string userId}, ${2:string groupName});"
+    ]
+  },
+  "bool AddUserToGroup(int userId, string groupName);": {
+    "prefix": "CPHTwitchAddUserToGroup",
+    "description": "Add a user to a group.",
+    "body": [
+      "CPH.AddUserToGroup(${1:int userId}, ${2:string groupName});"
+    ]
+  },
+  "bool AddUserToGroup(string userId, string groupName);": {
+    "prefix": "CPHYouTubeAddUserToGroup",
+    "description": "Add a user to a group.",
+    "body": [
+      "CPH.AddUserToGroup(${1:string userId}, ${2:string groupName});"
+    ]
+  },
+  "bool RemoveUserIdFromGroup(string userId, string groupName);": {
+    "prefix": "CPHRemoveUserIdFromGroup",
+    "description": "Add a user to a group by id.",
+    "body": [
+      "CPH.RemoveUserIdFromGroup(${1:string userId}, ${2:string groupName});"
+    ]
+  },
+  "bool RemoveUserFromGroup(int userId, string groupName);": {
+    "prefix": "CPHTwitchRemoveUserFromGroup",
+    "description": "Remove a user from a group.",
+    "body": [
+      "CPH.RemoveUserFromGroup(${1:int userId}, ${2:string groupName});"
+    ]
+  },
+  "bool RemoveUserFromGroup(string userId, string groupName);": {
+    "prefix": "CPHYouTubeRemoveUserFromGroup",
+    "description": "Remove a user from a group.",
+    "body": [
+      "CPH.RemoveUserFromGroup(${1:string userId}, ${2:string groupName});"
+    ]
+  },
+  "void WebsocketBroadcastString(string data);": {
+    "prefix": "CPHWebsocketBroadcastString",
+    "description": "Broadcast a string to the Streamer.bot websocket server.",
+    "body": [
+      "CPH.WebsocketBroadcastString(${1:string data});"
+    ]
+  },
+  "void WebsocketBroadcastJson(string data);": {
+    "prefix": "CPHWebsocketBroadcastJson",
+    "description": "Broadcast JSON to the Streamer.bot websocket server.",
+    "body": [
+      "CPH.WebsocketBroadcastJson(${1:string data});"
+    ]
+  },
+  "void WebsocketConnect(int connection = 0);": {
+    "prefix": "CPHWebsocketConnect",
+    "description": "Connect a websocket client.",
+    "body": [
+      "CPH.WebsocketConnect(${1:int connection = 0});"
+    ]
+  },
+  "void WebsocketDisconnect(int connection = 0);": {
+    "prefix": "CPHWebsocketDisconnect",
+    "description": "Disconnect a websocket client.",
+    "body": [
+      "CPH.WebsocketDisconnect(${1:int connection = 0});"
+    ]
+  },
+  "bool WebsocketIsConnected(int connection = 0);": {
+    "prefix": "CPHWebsocketIsConnected",
+    "description": "Check if a websocket client is connected.",
+    "body": [
+      "CPH.WebsocketIsConnected(${1:int connection = 0});"
+    ]
+  },
+  "void WebsocketSend(string data, int connection = 0);": {
+    "prefix": "CPHWebsocketSend",
+    "description": "Send a string to a websocket client.",
+    "body": [
+      "CPH.WebsocketSend(${1:string data}, ${2:int connection = 0});"
+    ]
+  },
+  "void WebsocketSend(byte[] data, int connection = 0);": {
+    "prefix": "CPHWebsocketSendByte",
+    "description": "Send byte data to a websocket client.",
+    "body": [
+      "CPH.WebsocketSend(${1:byte[] data}, ${2:int connection = 0});"
+    ]
+  },
+  "void WebsocketCustomServerStart(int connection = 0);": {
+    "prefix": "CPHWebsocketCustomServerStart",
+    "description": "Start a custom websocket server.",
+    "body": [
+      "CPH.WebsocketCustomServerStart(${1:int connection = 0});"
+    ]
+  },
+  "void WebsocketCustomServerStop(int connection = 0);": {
+    "prefix": "CPHWebsocketCustomServerStop",
+    "description": "Stop a custom websocket server.",
+    "body": [
+      "CPH.WebsocketCustomServerStop(${1:int connection = 0});"
+    ]
+  },
+  "bool WebsocketCustomServerIsListening(int connection = 0);": {
+    "prefix": "CPHWebsocketCustomServerIsListening",
+    "description": "Check if a custom websocket server is listening.",
+    "body": [
+      "CPH.WebsocketCustomServerIsListening(${1:int connection = 0});"
+    ]
+  },
+  "void WebsocketCustomServerCloseAllSessions(int connection = 0);": {
+    "prefix": "CPHWebsocketCustomServerCloseAllSessions",
+    "description": "Close all sessions from a custom websocket server.",
+    "body": [
+      "CPH.WebsocketCustomServerCloseAllSessions(${1:int connection = 0});"
+    ]
+  },
+  "void WebsocketCustomServerCloseSession(string sessionId, int connection = 0);": {
+    "prefix": "CPHWebsocketCustomServerCloseSession",
+    "description": "Close a session from a custom websocket server.",
+    "body": [
+      "CPH.WebsocketCustomServerCloseSession(${1:string sessionId}, ${2:int connection = 0});"
+    ]
+  },
+  "void WebsocketCustomServerBroadcast(string data, string sessionId, int connection = 0);": {
+    "prefix": "CPHWebsocketCustomServerBroadcast",
+    "description": "Broadcast a message to a custom websocket server.",
+    "body": [
+      "CPH.WebsocketCustomServerBroadcast(${1:string data}, ${2:string sessionId}, ${3:int connection = 0});"
+    ]
+  },
+  "int WebsocketCustomServerGetConnectionByName(string name);": {
+    "prefix": "CPHWebsocketCustomServerGetConnectionByName",
+    "description": "Get the name of a custom websocket server by name.",
+    "body": [
+      "CPH.WebsocketCustomServerGetConnectionByName(${1:string name});"
+    ]
+  },
+  "int BroadcastUdp(int port, object data);": {
+    "prefix": "CPHBroadcastUdp",
+    "description": "Broadcast a message to a UDP server.",
+    "body": [
+      "CPH.BroadcastUdp(${1:int port}, ${2:object data});"
+    ]
+  },
+  "void EnableCommand(string id);": {
+    "prefix": "CPHEnableCommand",
+    "description": "Enable a command.",
+    "body": [
+      "CPH.EnableCommand(${1:string id});"
+    ]
+  },
+  "void DisableCommand(string id);": {
+    "prefix": "CPHDisableCommand",
+    "description": "Disable a command.",
+    "body": [
+      "CPH.DisableCommand(${1:string id});"
+    ]
+  },
+  "void CommandSetGlobalCooldownDuration(string id, int seconds);": {
+    "prefix": "CPHCommandSetGlobalCooldownDuration",
+    "description": "Set the global cooldown duration on a command.",
+    "body": [
+      "CPH.CommandSetGlobalCooldownDuration(${1:string id}, ${2:int seconds});"
+    ]
+  },
+  "void CommandSetUserCooldownDuration(string id, int seconds);": {
+    "prefix": "CPHCommandSetUserCooldownDuration",
+    "description": "Set the user cooldown duration on a command.",
+    "body": [
+      "CPH.CommandSetUserCooldownDuration(${1:string id}, ${2:int seconds});"
+    ]
+  },
+  "void CommandAddToGlobalCooldown(string id, int seconds);": {
+    "prefix": "CPHCommandAddToGlobalCooldown",
+    "description": "Add to the global command cooldown.",
+    "body": [
+      "CPH.CommandAddToGlobalCooldown(${1:string id}, ${2:int seconds});"
+    ]
+  },
+  "void CommandAddToUserCooldown(string id, string userId, int seconds);": {
+    "prefix": "CPHCommandAddToUserCooldown",
+    "description": "Add to the command user cooldown.",
+    "body": [
+      "CPH.CommandAddToUserCooldown(${1:string id}, ${2:string userId}, ${3:int seconds});"
+    ]
+  },
+  "void CommandAddToAllUserCooldowns(string id, int seconds);": {
+    "prefix": "CPHCommandAddToAllUserCooldowns",
+    "description": "Add to all command user cooldowns.",
+    "body": [
+      "CPH.CommandAddToAllUserCooldowns(${1:string id}, ${2:int seconds});"
+    ]
+  },
+  "void CommandResetGlobalCooldown(string id);": {
+    "prefix": "CPHCommandResetGlobalCooldown",
+    "description": "Reset the command global cooldown.",
+    "body": [
+      "CPH.CommandResetGlobalCooldown(${1:string id});"
+    ]
+  },
+  "void CommandResetUserCooldown(string id, string userId);": {
+    "prefix": "CPHCommandResetUserCooldown",
+    "description": "Reset the command user cooldown.",
+    "body": [
+      "CPH.CommandResetUserCooldown(${1:string id}, ${2:string userId});"
+    ]
+  },
+  "void CommandResetAllUserCooldowns(string id);": {
+    "prefix": "CPHCommandResetAllUserCooldowns",
+    "description": "Reset all the command user cooldowns.",
+    "body": [
+      "CPH.CommandResetAllUserCooldowns(${1:string id});"
+    ]
+  },
+  "void CommandRemoveGlobalCooldown(string id);": {
+    "prefix": "CPHCommandRemoveGlobalCooldown",
+    "description": "Remove the command global cooldown.",
+    "body": [
+      "CPH.CommandRemoveGlobalCooldown(${1:string id});"
+    ]
+  },
+  "void CommandRemoveUserCooldown(string id, string userId);": {
+    "prefix": "CPHCommandRemoveUserCooldown",
+    "description": "Remove the command user cooldown.",
+    "body": [
+      "CPH.CommandRemoveUserCooldown(${1:string id}, ${2:string userId});"
+    ]
+  },
+  "void CommandRemoveAllUserCooldowns(string id);": {
+    "prefix": "CPHCommandRemoveAllUserCooldowns",
+    "description": "Remove all the command user cooldowns.",
+    "body": [
+      "CPH.CommandRemoveAllUserCooldowns(${1:string id});"
+    ]
+  },
+  "void TwitchSubscriberOnly(bool enabled = true);": {
+    "prefix": "CPHTwitchSubscriberOnly",
+    "description": "Change your Twitch chat to subscriber only.",
+    "body": [
+      "CPH.TwitchSubscriberOnly(${1:bool enabled = true});"
+    ]
+  },
+  "void TwitchEmoteOnly(bool enabled = true);": {
+    "prefix": "CPHTwitchEmoteOnly",
+    "description": "Change your Twitch chat to emote only.",
+    "body": [
+      "CPH.TwitchEmoteOnly(${1:bool enabled = true});"
+    ]
+  },
+  "void TwitchSlowMode(bool enabled = true, int duration = 0);": {
+    "prefix": "CPHTwitchSlowMode",
+    "description": "Change your Twitch chat to slow mode.",
+    "body": [
+      "CPH.TwitchSlowMode(${1:bool enabled = true}, ${2:int duration = 0});"
+    ]
+  },
+  "void TwitchFollowMode(bool enabled = true, int duration = 0);": {
+    "prefix": "CPHTwitchFollowMode",
+    "description": "Change your Twitch chat to Follow mode.",
+    "body": [
+      "CPH.TwitchFollowMode(${1:bool enabled = true}, ${2:int duration = 0});"
+    ]
+  },
+  "bool TwitchIsUserSubscribed(string userId, string tier);": {
+    "prefix": "CPHTwitchIsUserSubscribed",
+    "description": "Check if a Twitch user is subscribed.",
+    "body": [
+      "CPH.TwitchIsUserSubscribed(${1:string userId}, ${2:string tier});"
+    ]
+  },
+  "List<Cheermote> GetCheermotes();": {
+    "prefix": "CPHGetCheermotes",
+    "description": "Get all the cheer motes.",
+    "body": [
+      "CPH.GetCheermotes();"
+    ]
+  },
+  "bool SendWhisper(string userName, string message, bool bot = true);": {
+    "prefix": "CPHSendWhisper",
+    "description": "Send a whisper.",
+    "body": [
+      "CPH.SendWhisper(${1:string userName}, ${2:string message}, ${3:bool bot = true});"
+    ]
+  },
+  "bool TwitchAddModerator(string userName);": {
+    "prefix": "CPHTwitchAddModerator",
+    "description": "Add a moderator to your channel.",
+    "body": [
+      "CPH.TwitchAddModerator(${1:string userName});"
+    ]
+  },
+  "bool TwitchRemoveModerator(string userName);": {
+    "prefix": "CPHTwitchRemoveModerator",
+    "description": "Remove a moderator from your channel.",
+    "body": [
+      "CPH.TwitchRemoveModerator(${1:string userName});"
+    ]
+  },
+  "bool TwitchAddVip(string userName);": {
+    "prefix": "CPHTwitchAddVip",
+    "description": "Add a vip to your channel.",
+    "body": [
+      "CPH.TwitchAddVip(${1:string userName});"
+    ]
+  },
+  "bool TwitchRemoveVip(string userName);": {
+    "prefix": "CPHTwitchRemoveVip",
+    "description": "Remove a vip from your channel.",
+    "body": [
+      "CPH.TwitchRemoveVip(${1:string userName});"
+    ]
+  },
+  "bool SendMessage(string message, bool bot = true);": {
+    "prefix": "CPHSendMessage",
+    "description": "Send a message to your channel.",
+    "body": [
+      "CPH.SendMessage(${1:string message}, ${2:bool bot = true});"
+    ]
+  },
+  "bool SendAction(string action, bool bot = true);": {
+    "prefix": "CPHSendAction",
+    "description": "Send an action to your channel. This has the same effect as using /me.",
+    "body": [
+      "CPH.SendAction(${1:string action}, ${2:bool bot = true});"
+    ]
+  },
+  "bool TwitchClearChatMessages(bool bot = true);": {
+    "prefix": "CPHTwitchClearChatMessages",
+    "description": "Clear the chat messages from your channel.",
+    "body": [
+      "CPH.TwitchClearChatMessages(${1:bool bot = true});"
+    ]
+  },
+  "bool TwitchDeleteChatMessage(string messageId, bool bot = true);": {
+    "prefix": "CPHTwitchDeleteChatMessage",
+    "description": "Delete a chat message from your channel.",
+    "body": [
+      "CPH.TwitchDeleteChatMessage(${1:string messageId}, ${2:bool bot = true});"
+    ]
+  },
+  "bool TwitchClearChannelTags();": {
+    "prefix": "CPHTwitchClearChannelTags",
+    "description": "Clear all the channel tags from your channel.",
+    "body": [
+      "CPH.TwitchClearChannelTags();"
+    ]
+  },
+  "bool TwitchSetChannelTags(List<string> tags);": {
+    "prefix": "CPHTwitchSetChannelTags",
+    "description": "Set new channel tags on your channel.",
+    "body": [
+      "CPH.TwitchSetChannelTags(${1:List<string> tags});"
+    ]
+  },
+  "bool TwitchAddChannelTag(string tag);": {
+    "prefix": "CPHTwitchAddChannelTag",
+    "description": "Add a new channel tag on your channel.",
+    "body": [
+      "CPH.TwitchAddChannelTag(${1:string tag});"
+    ]
+  },
+  "bool TwitchRemoveChannelTag(string tag);": {
+    "prefix": "CPHTwitchRemoveChannelTag",
+    "description": "Remove a new channel tag from your channel.",
+    "body": [
+      "CPH.TwitchRemoveChannelTag(${1:string tag});"
+    ]
+  },
+  "bool TwitchSendShoutoutById(string userId);": {
+    "prefix": "CPHTwitchSendShoutoutById",
+    "description": "Send a shoutout by id.",
+    "body": [
+      "CPH.TwitchSendShoutoutById(${1:string userId});"
+    ]
+  },
+  "bool TwitchSendShoutoutByLogin(string userLogin);": {
+    "prefix": "CPHTwitchSendShoutoutByLogin",
+    "description": "Send a shoutout by login.",
+    "body": [
+      "CPH.TwitchSendShoutoutByLogin(${1:string userLogin});"
+    ]
+  },
+  "bool TwitchBanUser(string userName, string reason = null, bool bot = false);": {
+    "prefix": "CPHTwitchBanUser",
+    "description": "Ban a twitch user from your channel.",
+    "body": [
+      "CPH.TwitchBanUser(${1:string userName}, ${2:string reason = null}, ${3:bool bot = false});"
+    ]
+  },
+  "bool TwitchUnbanUser(string userName, bool bot = false);": {
+    "prefix": "CPHTwitchUnbanUser",
+    "description": "Unban a twitch user from your channel.",
+    "body": [
+      "CPH.TwitchUnbanUser(${1:string userName}, ${2:bool bot = false});"
+    ]
+  },
+  "bool TwitchTimeoutUser(string username, int duration, string reason = null, bool bot = false);": {
+    "prefix": "CPHTwitchTimeoutUser",
+    "description": "Timeout a twitch user from your channel.",
+    "body": [
+      "CPH.TwitchTimeoutUser(${1:string username}, ${2:int duration}, ${3:string reason = null}, ${4:bool bot = false});"
+    ]
+  },
+  "List<TwitchReward> TwitchGetRewards();": {
+    "prefix": "CPHTwitchGetRewards",
+    "description": "Get a list of all your Twitch rewards.",
+    "body": [
+      "CPH.TwitchGetRewards();"
+    ]
+  },
+  "long TwitchGetChannelPointsUsedByUserId(string userId);": {
+    "prefix": "CPHTwitchGetChannelPointsUsedByUserId",
+    "description": "Get the amount of channel points used by a user's id.",
+    "body": [
+      "CPH.TwitchGetChannelPointsUsedByUserId(${1:string userId});"
+    ]
+  },
+  "void DisableReward(string rewardId);": {
+    "prefix": "CPHDisableReward",
+    "description": "Disable a Twitch reward.",
+    "body": [
+      "CPH.DisableReward(${1:string rewardId});"
+    ]
+  },
+  "void EnableReward(string rewardId);": {
+    "prefix": "CPHEnableReward",
+    "description": "Enable a Twitch reward.",
+    "body": [
+      "CPH.EnableReward(${1:string rewardId});"
+    ]
+  },
+  "void PauseReward(string rewardId);": {
+    "prefix": "CPHPauseReward",
+    "description": "Pause a Twitch reward.",
+    "body": [
+      "CPH.PauseReward(${1:string rewardId});"
+    ]
+  },
+  "void UnPauseReward(string rewardId);": {
+    "prefix": "CPHUnPauseReward",
+    "description": "Unpause a Twitch reward.",
+    "body": [
+      "CPH.UnPauseReward(${1:string rewardId});"
+    ]
+  },
+  "void TwitchRewardGroupEnable(string groupName);": {
+    "prefix": "CPHTwitchRewardGroupEnable",
+    "description": "Enable a Twitch reward group.",
+    "body": [
+      "CPH.TwitchRewardGroupEnable(${1:string groupName});"
+    ]
+  },
+  "void TwitchRewardGroupDisable(string groupName);": {
+    "prefix": "CPHTwitchRewardGroupDisable",
+    "description": "Disable a Twitch reward group.",
+    "body": [
+      "CPH.TwitchRewardGroupDisable(${1:string groupName});"
+    ]
+  },
+  "void TwitchRewardGroupToggleEnable(string groupName);": {
+    "prefix": "CPHTwitchRewardGroupToggleEnable",
+    "description": "Toggle enable a Twitch reward group.",
+    "body": [
+      "CPH.TwitchRewardGroupToggleEnable(${1:string groupName});"
+    ]
+  },
+  "void TwitchRewardGroupPause(string groupName);": {
+    "prefix": "CPHTwitchRewardGroupPause",
+    "description": "Pause a Twitch reward group.",
+    "body": [
+      "CPH.TwitchRewardGroupPause(${1:string groupName});"
+    ]
+  },
+  "void TwitchRewardGroupUnPause(string groupName);": {
+    "prefix": "CPHTwitchRewardGroupUnPause",
+    "description": "Unpause a Twitch reward group.",
+    "body": [
+      "CPH.TwitchRewardGroupUnPause(${1:string groupName});"
+    ]
+  },
+  "void TwitchRewardGroupTogglePause(string groupName);": {
+    "prefix": "CPHTwitchRewardGroupTogglePause",
+    "description": "Toggle pause a Twitch reward group.",
+    "body": [
+      "CPH.TwitchRewardGroupTogglePause(${1:string groupName});"
+    ]
+  },
+  "bool UpdateRewardTitle(string rewardId, string title);": {
+    "prefix": "CPHUpdateRewardTitle",
+    "description": "Update the title of a Twitch reward.",
+    "body": [
+      "CPH.UpdateRewardTitle(${1:string rewardId}, ${2:string title});"
+    ]
+  },
+  "bool UpdateRewardPrompt(string rewardId, string prompt);": {
+    "prefix": "CPHUpdateRewardPrompt",
+    "description": "Update the prompt of a Twitch reward.",
+    "body": [
+      "CPH.UpdateRewardPrompt(${1:string rewardId}, ${2:string prompt});"
+    ]
+  },
+  "void UpdateRewardCost(string rewardId, int cost, bool additive = null);": {
+    "prefix": "CPHUpdateRewardCost",
+    "description": "Update the cost of a Twitch reward.",
+    "body": [
+      "CPH.UpdateRewardCost(${1:string rewardId}, ${2:int cost}, ${3:bool additive = null});"
+    ]
+  },
+  "void UpdateRewardCooldown(string rewardId, int cooldown, bool additive = null);": {
+    "prefix": "CPHUpdateRewardCooldown",
+    "description": "Update the cooldown of a Twitch reward.",
+    "body": [
+      "CPH.UpdateRewardCooldown(${1:string rewardId}, ${2:int cooldown}, ${3:bool additive = null});"
+    ]
+  },
+  "bool UpdateReward(string rewardId, string title = null, string prompt = null, int cost = null);": {
+    "prefix": "CPHUpdateReward",
+    "description": "Update a Twitch reward.",
+    "body": [
+      "CPH.UpdateReward(${1:string rewardId}, ${2:string title = null}, ${3:string prompt = null}, ${4:int? cost = null});"
+    ]
+  },
+  "void TwitchRedemptionFulfill(string rewardId, string redemptionId);": {
+    "prefix": "CPHTwitchRedemptionFulfill",
+    "description": "Fulfill a Twitch reward redemption.",
+    "body": [
+      "CPH.TwitchRedemptionFulfill(${1:string rewardId}, ${2:string redemptionId});"
+    ]
+  },
+  "void TwitchRedemptionCancel(string rewardId, string redemptionId);": {
+    "prefix": "CPHTwitchRedemptionCancel",
+    "description": "Cancel a Twitch reward redemption.",
+    "body": [
+      "CPH.TwitchRedemptionCancel(${1:string rewardId}, ${2:string redemptionId});"
+    ]
+  },
+  "void TwitchResetRewardCounter(string rewardId);": {
+    "prefix": "CPHTwitchResetRewardCounter",
+    "description": "Reset the counter for a reward.",
+    "body": [
+      "CPH.TwitchResetRewardCounter(${1:string rewardId});"
+    ]
+  },
+  "void TwitchResetRewardUserCounters(string rewardId);": {
+    "prefix": "CPHTwitchResetRewardUserCounters",
+    "description": "Reset the user counter for a reward.",
+    "body": [
+      "CPH.TwitchResetRewardUserCounters(${1:string rewardId});"
+    ]
+  },
+  "void TwitchResetUserRewardCounters(string userId, bool persisted);": {
+    "prefix": "CPHTwitchResetUserRewardCounters",
+    "description": "Reset the counter on all rewards for a user.",
+    "body": [
+      "CPH.TwitchResetUserRewardCounters(${1:string userId}, ${2:bool persisted});"
+    ]
+  },
+  "void TwitchResetUserRewardCounter(string rewardId, string userId);": {
+    "prefix": "CPHTwitchResetUserRewardCounter",
+    "description": "Reset the counter on a reward for a user.",
+    "body": [
+      "CPH.TwitchResetUserRewardCounter(${1:string rewardId}, ${2:string userId});"
+    ]
+  },
+  "bool TwitchPollCreate(string title, List<string> choices, int duration, int channelPointsPerVote = 0);": {
+    "prefix": "CPHTwitchPollCreate",
+    "description": "Create a Twitch poll on your channel.",
+    "body": [
+      "CPH.TwitchPollCreate(${1:string title}, ${2:List<string> choices}, ${3:int duration}, ${4:int channelPointsPerVote = 0});"
+    ]
+  },
+  "void TwitchPollTerminate(string pollId);": {
+    "prefix": "CPHTwitchPollTerminate",
+    "description": "Terminate a Twitch poll on your channel.",
+    "body": [
+      "CPH.TwitchPollTerminate(${1:string pollId});"
+    ]
+  },
+  "void TwitchPollArchive(string pollId);": {
+    "prefix": "CPHTwitchPollArchive",
+    "description": "Archive a Twitch poll on your channel.",
+    "body": [
+      "CPH.TwitchPollArchive(${1:string pollId});"
+    ]
+  },
+  "string TwitchPredictionCreate(string title, List<string> options, int duration);": {
+    "prefix": "CPHTwitchPredictionCreate",
+    "description": "Create a Twitch prediction on your channel.",
+    "body": [
+      "CPH.TwitchPredictionCreate(${1:string title}, ${2:List<string> options}, ${3:int duration});"
+    ]
+  },
+  "void TwitchPredictionCancel(string predictionId);": {
+    "prefix": "CPHTwitchPredictionCancel",
+    "description": "Cancel a Twitch prediction on your channel.",
+    "body": [
+      "CPH.TwitchPredictionCancel(${1:string predictionId});"
+    ]
+  },
+  "void TwitchPredictionLock(string predictionId);": {
+    "prefix": "CPHTwitchPredictionLock",
+    "description": "Lock a Twitch prediction on your channel.",
+    "body": [
+      "CPH.TwitchPredictionLock(${1:string predictionId});"
+    ]
+  },
+  "void TwitchPredictionResolve(string predictionId, string winningId);": {
+    "prefix": "CPHTwitchPredictionResolve",
+    "description": "Resolve a Twitch prediction on your channel.",
+    "body": [
+      "CPH.TwitchPredictionResolve(${1:string predictionId}, ${2:string winningId});"
+    ]
+  },
+  "long TwitchGetBitsDonatedByUserId(string userId);": {
+    "prefix": "CPHTwitchGetBitsDonatedByUserId",
+    "description": "Get the total amount of bits donated by a user's id.",
+    "body": [
+      "CPH.TwitchGetBitsDonatedByUserId(${1:string userId});"
+    ]
+  },
+  "List<ClipData> GetAllClips();": {
+    "prefix": "CPHGetAllClips",
+    "description": "Get a list of all created clips.",
+    "body": [
+      "CPH.GetAllClips();"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(string username);": {
+    "prefix": "CPHGetClipsForUserName",
+    "description": "Get a list of all created clips for a username.",
+    "body": [
+      "CPH.GetClipsForUser(${1:string username});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(string userName, int count);": {
+    "prefix": "CPHGetClipsForUserNameWithCount",
+    "description": "Get a list of all created clips for a username.",
+    "body": [
+      "CPH.GetClipsForUser(${1:string userName}, ${2:int count});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(string userName, DateTime start, DateTime end);": {
+    "prefix": "CPHGetClipsForUserNameWithDateTime",
+    "description": "Get a list of all created clips for a username.",
+    "body": [
+      "CPH.GetClipsForUser(${1:string userName}, ${2:DateTime start}, ${3:DateTime end});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(string userName, DateTime start, DateTime end, int count);": {
+    "prefix": "CPHGetClipsForUserNameWithDateTimeAndCount",
+    "description": "Get a list of all created clips for a username.",
+    "body": [
+      "CPH.GetClipsForUser(${1:string userName}, ${2:DateTime start}, ${3:DateTime end}, ${4:int count});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(string userName, TimeSpan duration);": {
+    "prefix": "CPHGetClipsForUserNameWithTimespan",
+    "description": "Get a list of all created clips for a username.",
+    "body": [
+      "CPH.GetClipsForUser(${1:string userName}, ${2:TimeSpan duration});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(string userName, TimeSpan duration, int count);": {
+    "prefix": "CPHGetClipsForUserNameWithTimespanAndCount",
+    "description": "Get a list of all created clips for a username.",
+    "body": [
+      "CPH.GetClipsForUser(${1:string userName}, ${2:TimeSpan duration}, ${3:int count});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(int userId);": {
+    "prefix": "CPHGetClipsForUserId",
+    "description": "Get a list of all created clips for a user id.",
+    "body": [
+      "CPH.GetClipsForUser(${1:int userId});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(int userId, int count);": {
+    "prefix": "CPHGetClipsForUserIdWithCount",
+    "description": "Get a list of all created clips for a user id.",
+    "body": [
+      "CPH.GetClipsForUser(${1:int userId}, ${2:int count});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(int userId, DateTime start, DateTime end);": {
+    "prefix": "CPHGetClipsForUserIdWithDateTime",
+    "description": "Get a list of all created clips for a user id.",
+    "body": [
+      "CPH.GetClipsForUser(${1:int userId}, ${2:DateTime start}, ${3:DateTime end});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(int userId, DateTime start, DateTime end, int count);": {
+    "prefix": "CPHGetClipsForUserIdWithDateTimeAndCount",
+    "description": "Get a list of all created clips for a user id.",
+    "body": [
+      "CPH.GetClipsForUser(${1:int userId}, ${2:DateTime start}, ${3:DateTime end}, ${4:int count});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(int userId, TimeSpan duration);": {
+    "prefix": "CPHGetClipsForUserIdWithTimespan",
+    "description": "Get a list of all created clips for a user id.",
+    "body": [
+      "CPH.GetClipsForUser(${1:int userId}, ${2:TimeSpan duration});"
+    ]
+  },
+  "List<ClipData> GetClipsForUser(int userId, TimeSpan duration, int count);": {
+    "prefix": "CPHGetClipsForUserIdWithTimespanAndCount",
+    "description": "Get a list of all created clips for a user id.",
+    "body": [
+      "CPH.GetClipsForUser(${1:int userId}, ${2:TimeSpan duration}, ${3:int count});"
+    ]
+  },
+  "List<ClipData> GetClipsForGame(int gameId);": {
+    "prefix": "CPHGetClipsForGame",
+    "description": "Get a list of all created clips for a game.",
+    "body": [
+      "CPH.GetClipsForGame(${1:int gameId});"
+    ]
+  },
+  "List<ClipData> GetClipsForGame(int gameId, int count);": {
+    "prefix": "CPHGetClipsForGameWithCount",
+    "description": "Get a list of all created clips for a game.",
+    "body": [
+      "CPH.GetClipsForGame(${1:int gameId}, ${2:int count});"
+    ]
+  },
+  "List<ClipData> GetClipsForGame(int gameId, DateTime start, DateTime end);": {
+    "prefix": "CPHGetClipsForGameWithDateTime",
+    "description": "Get a list of all created clips for a game.",
+    "body": [
+      "CPH.GetClipsForGame(${1:int gameId}, ${2:DateTime start}, ${3:DateTime end});"
+    ]
+  },
+  "List<ClipData> GetClipsForGame(int gameId, DateTime start, DateTime end, int count);": {
+    "prefix": "CPHGetClipsForGameWithDateTimeAndCount",
+    "description": "Get a list of all created clips for a game.",
+    "body": [
+      "CPH.GetClipsForGame(${1:int gameId}, ${2:DateTime start}, ${3:DateTime end}, ${4:int count});"
+    ]
+  },
+  "List<ClipData> GetClipsForGame(int gameId, TimeSpan duration);": {
+    "prefix": "CPHGetClipsForGameWithTimespan",
+    "description": "Get a list of all created clips for a game.",
+    "body": [
+      "CPH.GetClipsForGame(${1:int gameId}, ${2:TimeSpan duration});"
+    ]
+  },
+  "List<ClipData> GetClipsForGame(int gameId, TimeSpan duration, int count);": {
+    "prefix": "CPHGetClipsForGameWithTimespanAndCount",
+    "description": "Get a list of all created clips for a game.",
+    "body": [
+      "CPH.GetClipsForGame(${1:int gameId}, ${2:TimeSpan duration}, ${3:int count});"
+    ]
+  },
+  "ClipData CreateClip();": {
+    "prefix": "CPHCreateClip",
+    "description": "Create a clip.",
+    "body": [
+      "CPH.CreateClip();"
+    ]
+  },
+  "StreamMarker CreateStreamMarker(string description);": {
+    "prefix": "CPHCreateStreamMarker",
+    "description": "Create a stream marker at the current poiny in your stream.",
+    "body": [
+      "CPH.CreateStreamMarker(${1:string description});"
+    ]
+  },
+  "void TwitchRunCommercial(int duration);": {
+    "prefix": "CPHTwitchRunCommercial",
+    "description": "Run a Twitch commercial on your channel.",
+    "body": [
+      "CPH.TwitchRunCommercial(${1:int duration});"
+    ]
+  },
+  "bool SetChannelTitle(string title);": {
+    "prefix": "CPHSetChannelTitle",
+    "description": "Set the title on your Twitch channel.",
+    "body": [
+      "CPH.SetChannelTitle(${1:string title});"
+    ]
+  },
+  "GameInfo SetChannelGame(string game);": {
+    "prefix": "CPHSetChannelGame",
+    "description": "Set the game on your Twitch channel.",
+    "body": [
+      "CPH.SetChannelGame(${1:string game});"
+    ]
+  },
+  "bool SetChannelGameById(string gameId);": {
+    "prefix": "CPHSetChannelGameById",
+    "description": "Set the game by id on your Twitch channel.",
+    "body": [
+      "CPH.SetChannelGameById(${1:string gameId});"
+    ]
+  },
+  "bool TwitchStartRaidById(string userId);": {
+    "prefix": "CPHTwitchStartRaidById",
+    "description": "Start a raid by a user id.",
+    "body": [
+      "CPH.TwitchStartRaidById(${1:string userId});"
+    ]
+  },
+  "bool TwitchStartRaidByName(string userName);": {
+    "prefix": "CPHTwitchStartRaidByName",
+    "description": "Start a raid by a user name.",
+    "body": [
+      "CPH.TwitchStartRaidByName(${1:string userName});"
+    ]
+  },
+  "bool TwitchCancelRaid();": {
+    "prefix": "CPHTwitchCancelRaid",
+    "description": "Cancel the pending Twitch raid.",
+    "body": [
+      "CPH.TwitchCancelRaid();"
+    ]
+  },
+  "bool TwitchUpdateChannelGuestStarSettings(bool isModeratorSendLiveEnabled = null, int slotCount = null, bool isBrowserSourceAudioEnabled = null, string groupLayout = null, bool regenerateBrowserSource = null);": {
+    "prefix": "CPHTwitchUpdateChannelGuestStarSettings",
+    "description": "Start a raid by a user name.",
+    "body": [
+      "CPH.TwitchUpdateChannelGuestStarSettings(${1:bool? isModeratorSendLiveEnabled = null}, ${2:int? slotCount = null}, ${3:bool? isBrowserSourceAudioEnabled = null}, ${4:string groupLayout = null}, ${5:bool? regenerateBrowserSource = null});"
+    ]
+  },
+  "bool TwitchUpdateGuestStarSlotSettings(int slotId, bool isAudioEnabled = null, bool isVideoEnabled = null, bool isLive = null, int volume = null);": {
+    "prefix": "CPHTwitchUpdateGuestStarSlotSettings",
+    "description": "Update the guest star slot settings.",
+    "body": [
+      "CPH.TwitchUpdateGuestStarSlotSettings(${1:int slotId}, ${2:bool? isAudioEnabled = null}, ${3:bool? isVideoEnabled = null}, ${4:bool? isLive = null}, ${5:int? volume = null});"
+    ]
+  },
+  "GuestStarSettings TwitchGetChannelGuestStarSettings();": {
+    "prefix": "CPHTwitchGetChannelGuestStarSettings",
+    "description": "Get the guest star settings off your channel.",
+    "body": [
+      "CPH.TwitchGetChannelGuestStarSettings();"
+    ]
+  },
+  "GuestSession TwitchGetGuestStarSession();": {
+    "prefix": "CPHTwitchGetGuestStarSession",
+    "description": "Get the current guest star session.",
+    "body": [
+      "CPH.TwitchGetGuestStarSession();"
+    ]
+  },
+  "GuestSession TwitchCreateGuestStarSession();": {
+    "prefix": "CPHTwitchCreateGuestStarSession",
+    "description": "Create a new guest star session.",
+    "body": [
+      "CPH.TwitchCreateGuestStarSession();"
+    ]
+  },
+  "GuestSession TwitchEndGuestStarSession();": {
+    "prefix": "CPHTwitchEndGuestStarSession",
+    "description": "End the current guest star session.",
+    "body": [
+      "CPH.TwitchEndGuestStarSession();"
+    ]
+  },
+  "List<GuestStarInvite> TwitchGetGuestStarInvites();": {
+    "prefix": "CPHTwitchGetGuestStarInvites",
+    "description": "Get all the guest star invites.",
+    "body": [
+      "CPH.TwitchGetGuestStarInvites();"
+    ]
+  },
+  "bool TwitchSendGuestStarInvite(string userLogin);": {
+    "prefix": "CPHTwitchSendGuestStarInvite",
+    "description": "Send a guest star invite.",
+    "body": [
+      "CPH.TwitchSendGuestStarInvite(${1:string userLogin});"
+    ]
+  },
+  "bool TwitchDeleteGuestStarInvite(string userLogin);": {
+    "prefix": "CPHTwitchDeleteGuestStarInvite",
+    "description": "Delete a guest star invite.",
+    "body": [
+      "CPH.TwitchDeleteGuestStarInvite(${1:string userLogin});"
+    ]
+  },
+  "bool TwitchAssignGuestStarSlot(string userLogin, int slot);": {
+    "prefix": "CPHTwitchAssignGuestStarSlot",
+    "description": "Assign a guest star slot.",
+    "body": [
+      "CPH.TwitchAssignGuestStarSlot(${1:string userLogin}, ${2:int slot});"
+    ]
+  },
+  "bool TwitchDeleteGuestStarSlot(string userLogin, int slot);": {
+    "prefix": "CPHTwitchDeleteGuestStarSlot",
+    "description": "Delete a guest star slot.",
+    "body": [
+      "CPH.TwitchDeleteGuestStarSlot(${1:string userLogin}, ${2:int slot});"
+    ]
+  },
+  "bool TwitchUpdateGuestStarSlot(int sourceSlot, int destinationSlot);": {
+    "prefix": "CPHTwitchUpdateGuestStarSlot",
+    "description": "Update a guest star slot.",
+    "body": [
+      "CPH.TwitchUpdateGuestStarSlot(${1:int sourceSlot}, ${2:int destinationSlot});"
+    ]
+  },
+  "void TwitchAnnounce(string message, bool bot = false, string color = null);": {
+    "prefix": "CPHTwitchAnnounce",
+    "description": "Send an announcement to your Twitch chat.",
+    "body": [
+      "CPH.TwitchAnnounce(${1:string message}, ${2:bool bot = false}, ${3:string color = null});"
+    ]
+  },
+  "List<TeamInfo> GetTeamInfoById(string userId);": {
+    "prefix": "CPHGetTeamInfoById",
+    "description": "Get the team info from a user id.",
+    "body": [
+      "CPH.GetTeamInfoById(${1:string userId});"
+    ]
+  },
+  "List<TeamInfo> GetTeamInfoByLogin(string userLogin);": {
+    "prefix": "CPHGetTeamInfoByLogin",
+    "description": "Get the team info from a user login.",
+    "body": [
+      "CPH.GetTeamInfoByLogin(${1:string userLogin});"
+    ]
+  },
+  "string TwitchOAuthToken;": {
+    "prefix": "CPHTwitchOAuthToken",
+    "description": "Get OAuth token for your Twitch account.",
+    "body": [
+      "CPH.TwitchOAuthToken;"
+    ]
+  },
+  "string TwitchClientId;": {
+    "prefix": "CPHTwitchClientId",
+    "description": "Get the client id for your Twitch account.",
+    "body": [
+      "CPH.TwitchClientId;"
+    ]
+  },
+  "void SendYouTubeMessage(string message);": {
+    "prefix": "CPHSendYouTubeMessage",
+    "description": "Send a message to the YouTube chat.",
+    "body": [
+      "CPH.SendYouTubeMessage(${1:string message});"
+    ]
+  },
+  "bool ObsIsConnected(int connection = 0);": {
+    "prefix": "CPHObsIsConnected",
+    "description": "Check if OBS Studio is connected.",
+    "body": [
+      "CPH.ObsIsConnected(${1:int connection = 0});"
+    ]
+  },
+  "bool ObsConnect(int connection = 0);": {
+    "prefix": "CPHObsConnect",
+    "description": "Connect OBS Studio.",
+    "body": [
+      "CPH.ObsConnect(${1:int connection = 0});"
+    ]
+  },
+  "void ObsDisconnect(int connection = 0);": {
+    "prefix": "CPHObsDisconnect",
+    "description": "Disconnect OBS Studio.",
+    "body": [
+      "CPH.ObsDisconnect(${1:int connection = 0});"
+    ]
+  },
+  "int ObsGetConnectionByName(string name);": {
+    "prefix": "CPHObsGetConnectionByName",
+    "description": "Get an OBS Studio connection by name.",
+    "body": [
+      "CPH.ObsGetConnectionByName(${1:string name});"
+    ]
+  },
+  "void ObsIsStreaming(int connection = 0);": {
+    "prefix": "CPHObsIsStreaming",
+    "description": "Check if OBS Studio is streaming.",
+    "body": [
+      "CPH.ObsIsStreaming(${1:int connection = 0});"
+    ]
+  },
+  "void ObsStopStreaming(int connection = 0);": {
+    "prefix": "CPHObsStopStreaming",
+    "description": "Stop streaming with OBS Studio.",
+    "body": [
+      "CPH.ObsStopStreaming(${1:int connection = 0});"
+    ]
+  },
+  "void ObsIsRecording(int connection = 0);": {
+    "prefix": "CPHObsIsRecording",
+    "description": "Check if OBS Studio is recording.",
+    "body": [
+      "CPH.ObsIsRecording(${1:int connection = 0});"
+    ]
+  },
+  "void ObsStartRecording(int connection = 0);": {
+    "prefix": "CPHObsStartRecording",
+    "description": "Start recording with OBS Studio.",
+    "body": [
+      "CPH.ObsStartRecording(${1:int connection = 0});"
+    ]
+  },
+  "void ObsStopRecording(int connection = 0);": {
+    "prefix": "CPHObsStopRecording",
+    "description": "Stop recording with OBS Studio.",
+    "body": [
+      "CPH.ObsStopRecording(${1:int connection = 0});"
+    ]
+  },
+  "void ObsPauseRecording(int connection = 0);": {
+    "prefix": "CPHObsPauseRecording",
+    "description": "Pause recording with OBS Studio.",
+    "body": [
+      "CPH.ObsPauseRecording(${1:int connection = 0});"
+    ]
+  },
+  "void ObsResumeRecording(int connection = 0);": {
+    "prefix": "CPHObsResumeRecording",
+    "description": "Resume recording with OBS Studio.",
+    "body": [
+      "CPH.ObsResumeRecording(${1:int connection = 0});"
+    ]
+  },
+  "void ObsSetScene(string sceneName, int connection = 0);": {
+    "prefix": "CPHObsSetScene",
+    "description": "Set your OBS Studio scene.",
+    "body": [
+      "CPH.ObsSetScene(${1:string sceneName}, ${2:int connection = 0});"
+    ]
+  },
+  "string ObsGetCurrentScene(int connection = 0);": {
+    "prefix": "CPHObsGetCurrentScene",
+    "description": "Get your current OBS Studio scene.",
+    "body": [
+      "CPH.ObsGetCurrentScene(${1:int connection = 0});"
+    ]
+  },
+  "void ObsSetSourceVisibility(string scene, string source, bool visible, int connection = 0);": {
+    "prefix": "CPHObsSetSourceVisibility",
+    "description": "Set the visibility on an OBS Studio source.",
+    "body": [
+      "CPH.ObsSetSourceVisibility(${1:string scene}, ${2:string source}, ${3:bool visible}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsHideSource(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsHideSource",
+    "description": "Hide an OBS Studio source.",
+    "body": [
+      "CPH.ObsHideSource(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsShowSource(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsShowSource",
+    "description": "Show an OBS Studio source.",
+    "body": [
+      "CPH.ObsShowSource(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "string ObsGetSceneItemProperties(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsGetSceneItemProperties",
+    "description": "Get the properties of an OBS Studio scene item.",
+    "body": [
+      "CPH.ObsGetSceneItemProperties(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "List<string> ObsGetGroupSources(string scene, string groupName, int connection = 0);": {
+    "prefix": "CPHObsGetGroupSources",
+    "description": "Get the sources of an OBS Studio group.",
+    "body": [
+      "CPH.ObsGetGroupSources(${1:string scene}, ${2:string groupName}, ${3:int connection = 0});"
+    ]
+  },
+  "bool ObsIsSourceVisible(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsIsSourceVisible",
+    "description": "Check if your OBS Studio source is visible.",
+    "body": [
+      "CPH.ObsIsSourceVisible(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "string ObsSetRandomGroupSourceVisible(string scene, string groupName, int connection = 0);": {
+    "prefix": "CPHObsSetRandomGroupSourceVisible",
+    "description": "Set a random OBS Studio group source visible.",
+    "body": [
+      "CPH.ObsSetRandomGroupSourceVisible(${1:string scene}, ${2:string groupName}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsHideGroupsSources(string scene, string groupName, int connection = 0);": {
+    "prefix": "CPHObsHideGroupsSources",
+    "description": "Hide all OBS Studio group sources.",
+    "body": [
+      "CPH.ObsHideGroupsSources(${1:string scene}, ${2:string groupName}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsSetBrowserSource(string scene, string source, string url, int connection = 0);": {
+    "prefix": "CPHObsSetBrowserSource",
+    "description": "Set an OBS Studio browser source URL.",
+    "body": [
+      "CPH.ObsSetBrowserSource(${1:string scene}, ${2:string source}, ${3:string url}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetGdiText(string scene, string source, string text, int connection = 0);": {
+    "prefix": "CPHObsSetGdiText",
+    "description": "Set an OBS Studio GDI+ text.",
+    "body": [
+      "CPH.ObsSetGdiText(${1:string scene}, ${2:string source}, ${3:string text}, ${4:int connection = 0});"
+    ]
+  },
+  "bool ObsIsFilterEnabled(string scene, string filterName, int connection = 0);": {
+    "prefix": "CPHObsIsSceneFilterEnabled",
+    "description": "Check if an OBS Studio scene filter is enabled.",
+    "body": [
+      "CPH.ObsIsFilterEnabled(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "bool ObsIsFilterEnabled(string scene, string source, string filterName, int connection = 0);": {
+    "prefix": "CPHObsIsSourceFilterEnabled",
+    "description": "Check if an OBS Studio source filter is enabled.",
+    "body": [
+      "CPH.ObsIsFilterEnabled(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetFilterState(string scene, string filterName, int state, int connection = 0);": {
+    "prefix": "CPHObsSetSceneFilterState",
+    "description": "Set the OBS Studio scene filter state.",
+    "body": [
+      "CPH.ObsSetFilterState(${1:string scene}, ${2:string filterName}, ${3:int state}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetFilterState(string scene, string source, string filterName, int state, int connection = 0);": {
+    "prefix": "CPHObsSetSourceFilterState",
+    "description": "Set the OBS Studio source filter state.",
+    "body": [
+      "CPH.ObsSetFilterState(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int state}, ${5:int connection = 0});"
+    ]
+  },
+  "void ObsShowFilter(string scene, string filterName, int connection = 0);": {
+    "prefix": "CPHObsShowSceneFilter",
+    "description": "Show an OBS Studio scene filter.",
+    "body": [
+      "CPH.ObsShowFilter(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsShowFilter(string scene, string source, string filterName, int connection = 0);": {
+    "prefix": "CPHObsShowSourceFilter",
+    "description": "Show an OBS Studio source filter.",
+    "body": [
+      "CPH.ObsShowFilter(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsHideFilter(string scene, string filterName, int connection = 0);": {
+    "prefix": "CPHObsHideSceneFilter",
+    "description": "Hide an OBS Studio scene filter.",
+    "body": [
+      "CPH.ObsHideFilter(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsHideFilter(string scene, string source, string filterName, int connection = 0);": {
+    "prefix": "CPHObsHideSourceFilter",
+    "description": "Hide an OBS Studio source filter.",
+    "body": [
+      "CPH.ObsHideFilter(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsToggleFilter(string scene, string filterName, int connection = 0);": {
+    "prefix": "CPHObsToggleSceneFilter",
+    "description": "Toggle an OBS Studio scene filter.",
+    "body": [
+      "CPH.ObsToggleFilter(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsToggleFilter(string scene, string source, string filterName, int connection = 0);": {
+    "prefix": "CPHObsToggleSourceFilter",
+    "description": "Toggle an OBS Studio source filter.",
+    "body": [
+      "CPH.ObsToggleFilter(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetRandomFilter(string scene, string filterName, int connection = 0);": {
+    "prefix": "CPHObsSetRandomSceneFilter",
+    "description": "Set random an OBS Studio scene filter.",
+    "body": [
+      "CPH.ObsSetRandomFilter(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsSetRandomFilter(string scene, string source, string filterName, int connection = 0);": {
+    "prefix": "CPHObsSetRandomSourceFilter",
+    "description": "Set random an OBS Studio source filter.",
+    "body": [
+      "CPH.ObsSetRandomFilter(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetSourceMuteState(string scene, string source, int state, int connection = 0);": {
+    "prefix": "CPHObsSetSourceMuteState",
+    "description": "Set an OBS Studio source mute state.",
+    "body": [
+      "CPH.ObsSetSourceMuteState(${1:string scene}, ${2:string source}, ${3:int state}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSourceMute(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsSourceMute",
+    "description": "Mute an OBS Studio source.",
+    "body": [
+      "CPH.ObsSourceMute(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsSourceUnMute(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsSourceUnMute",
+    "description": "Unmute an OBS Studio source.",
+    "body": [
+      "CPH.ObsSourceUnMute(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsSourceMuteToggle(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsSourceMuteToggle",
+    "description": "Toggle the mute on an OBS Studio source.",
+    "body": [
+      "CPH.ObsSourceMuteToggle(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "string ObsSendRaw(string requestType, string data, int connection = 0);": {
+    "prefix": "CPHObsSendRaw",
+    "description": "Send a raw request to the OBS Studio websocket.",
+    "body": [
+      "CPH.ObsSendRaw(${1:string requestType}, ${2:string data}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsHideSourcesFilters(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsHideSourcesFilters",
+    "description": "Hide all filters on an OBS Studio source.",
+    "body": [
+      "CPH.ObsHideSourcesFilters(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsHideScenesFilters(string scene, int connection = 0);": {
+    "prefix": "CPHObsHideScenesFilters",
+    "description": "Hide all filters on an OBS Studio scene.",
+    "body": [
+      "CPH.ObsHideScenesFilters(${1:string scene}, ${2:int connection = 0});"
+    ]
+  },
+  "void ObsSetMediaState(string scene, string source, int state, int connection = 0);": {
+    "prefix": "CPHObsSetMediaState",
+    "description": "Set the media state on an OBS Studio media source.",
+    "body": [
+      "CPH.ObsSetMediaState(${1:string scene}, ${2:string source}, ${3:int state}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsMediaPlay(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsMediaPlay",
+    "description": "Play an OBS Studio media source.",
+    "body": [
+      "CPH.ObsMediaPlay(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsMediaPause(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsMediaPause",
+    "description": "Pause an OBS Studio media source.",
+    "body": [
+      "CPH.ObsMediaPause(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsMediaRestart(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsMediaRestart",
+    "description": "Restart an OBS Studio media source.",
+    "body": [
+      "CPH.ObsMediaRestart(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsMediaStop(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsMediaStop",
+    "description": "Stop an OBS Studio media source.",
+    "body": [
+      "CPH.ObsMediaStop(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsMediaNext(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsMediaNext",
+    "description": "Next an OBS Studio media source.",
+    "body": [
+      "CPH.ObsMediaNext(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsMediaPrevious(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsMediaPrevious",
+    "description": "Previous an OBS Studio media source.",
+    "body": [
+      "CPH.ObsMediaPrevious(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "long ObsConvertRgb(int a, int r, int g, int b);": {
+    "prefix": "CPHObsConvertRgb",
+    "description": "Convert RGB to the OBS Studio color system.",
+    "body": [
+      "CPH.ObsConvertRgb(${1:int a}, ${2:int r}, ${3:int g}, ${4:int b});"
+    ]
+  },
+  "long ObsConvertColorHex(string colorHex);": {
+    "prefix": "CPHObsConvertColorHex",
+    "description": "Convert HEX to the OBS Studio color system.",
+    "body": [
+      "CPH.ObsConvertColorHex(${1:string colorHex});"
+    ]
+  },
+  "void ObsSetColorSourceColor(string scene, string source, int a, int r, int g, int b, int connection = 0);": {
+    "prefix": "CPHObsSetColorSourceRgbColor",
+    "description": "Set the RGB color on an OBS Studio color source.",
+    "body": [
+      "CPH.ObsSetColorSourceColor(${1:string scene}, ${2:string source}, ${3:int a}, ${4:int r}, ${5:int g}, ${6:int b}, ${7:int connection = 0});"
+    ]
+  },
+  "void ObsSetColorSourceColor(string scene, string source, string hexColor, int connection = 0);": {
+    "prefix": "CPHObsSetColorSourceHexColor",
+    "description": "Set the HEX color on an OBS Studio color source.",
+    "body": [
+      "CPH.ObsSetColorSourceColor(${1:string scene}, ${2:string source}, ${3:string hexColor}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetColorSourceRandomColor(string scene, string source, int connection = 0);": {
+    "prefix": "CPHObsSetColorSourceRandomColor",
+    "description": "Set a random color on an OBS Studio color source.",
+    "body": [
+      "CPH.ObsSetColorSourceRandomColor(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void ObsSetReplayBufferState(int state, int connection = 0);": {
+    "prefix": "CPHObsSetReplayBufferState",
+    "description": "Set the state off the OBS Studio replay buffer.",
+    "body": [
+      "CPH.ObsSetReplayBufferState(${1:int state}, ${2:int connection = 0});"
+    ]
+  },
+  "void ObsReplayBufferStart(int connection = 0);": {
+    "prefix": "CPHObsReplayBufferStart",
+    "description": "Start the OBS Studio replay buffer.",
+    "body": [
+      "CPH.ObsReplayBufferStart(${1:int connection = 0});"
+    ]
+  },
+  "void ObsReplayBufferStop(int connection = 0);": {
+    "prefix": "CPHObsReplayBufferStop",
+    "description": "Stop the OBS Studio replay buffer.",
+    "body": [
+      "CPH.ObsReplayBufferStop(${1:int connection = 0});"
+    ]
+  },
+  "void ObsReplayBufferSave(int connection = 0);": {
+    "prefix": "CPHObsReplayBufferSave",
+    "description": "Save the OBS Studio replay buffer.",
+    "body": [
+      "CPH.ObsReplayBufferSave(${1:int connection = 0});"
+    ]
+  },
+  "void ObsSetMediaSourceFile(string scene, string source, string file, int connection = 0);": {
+    "prefix": "CPHObsSetMediaSourceFile",
+    "description": "Set an OBS Studio media source file.",
+    "body": [
+      "CPH.ObsSetMediaSourceFile(${1:string scene}, ${2:string source}, ${3:string file}, ${4:int connection = 0});"
+    ]
+  },
+  "void ObsSetImageSourceFile(string scene, string source, string file, int connection = 0);": {
+    "prefix": "CPHObsSetImageSourceFile",
+    "description": "Set an OBS Studio image source file.",
+    "body": [
+      "CPH.ObsSetImageSourceFile(${1:string scene}, ${2:string source}, ${3:string file}, ${4:int connection = 0});"
+    ]
+  },
+  "bool ObsTakeScreenshot(string scene, string source, string path, int quality  = -1, int connection = 0);": {
+    "prefix": "CPHObsTakeScreenshot",
+    "description": "Take a screenshot with OBS Studio.",
+    "body": [
+      "CPH.ObsTakeScreenshot(${1:string scene}, ${2:string source}, ${3:string path}, ${4:int quality  = -1}, ${5:int connection = 0});"
+    ]
+  },
+  "bool SlobsIsConnected(int connection = 0);": {
+    "prefix": "CPHSlobsIsConnected",
+    "description": "See if Streamlabs Desktop is connected.",
+    "body": [
+      "CPH.SlobsIsConnected(${1:int connection = 0});"
+    ]
+  },
+  "void SlobsConnect(int connection = 0);": {
+    "prefix": "CPHSlobsConnect",
+    "description": "Connect Streamlabs Desktop.",
+    "body": [
+      "CPH.SlobsConnect(${1:int connection = 0});"
+    ]
+  },
+  "void SlobsDisconnect(int connection = 0);": {
+    "prefix": "CPHSlobsDisconnect",
+    "description": "Disconnect Streamlabs Desktop.",
+    "body": [
+      "CPH.SlobsDisconnect(${1:int connection = 0});"
+    ]
+  },
+  "bool SlobsIsStreaming(int connection = 0);": {
+    "prefix": "CPHSlobsIsStreaming",
+    "description": "Check if Streamlabs Desktop is streaming.",
+    "body": [
+      "CPH.SlobsIsStreaming(${1:int connection = 0});"
+    ]
+  },
+  "void SlobsStartStreaming(int connection = 0);": {
+    "prefix": "CPHSlobsStartStreaming",
+    "description": "Start Streamlabs Desktop streaming.",
+    "body": [
+      "CPH.SlobsStartStreaming(${1:int connection = 0});"
+    ]
+  },
+  "void SlobsStopStreaming(int connection = 0);": {
+    "prefix": "CPHSlobsStopStreaming",
+    "description": "Stop Streamlabs Desktop streaming.",
+    "body": [
+      "CPH.SlobsStopStreaming(${1:int connection = 0});"
+    ]
+  },
+  "bool SlobsIsRecording(int connection = 0);": {
+    "prefix": "CPHSlobsIsRecording",
+    "description": "Check if Streamlabs Desktop is recording.",
+    "body": [
+      "CPH.SlobsIsRecording(${1:int connection = 0});"
+    ]
+  },
+  "void SlobsStartRecording(int connection = 0);": {
+    "prefix": "CPHSlobsStartRecording",
+    "description": "Start Streamlabs Desktop recording.",
+    "body": [
+      "CPH.SlobsStartRecording(${1:int connection = 0});"
+    ]
+  },
+  "void SlobsStopRecording(int connection = 0);": {
+    "prefix": "CPHSlobsStopRecording",
+    "description": "Stop Streamlabs Desktop recording.",
+    "body": [
+      "CPH.SlobsStopRecording(${1:int connection = 0});"
+    ]
+  },
+  "void SlobsPauseRecording(int connection = 0);": {
+    "prefix": "CPHSlobsPauseRecording",
+    "description": "Pause Streamlabs Desktop recording.",
+    "body": [
+      "CPH.SlobsPauseRecording(${1:int connection = 0});"
+    ]
+  },
+  "void SlobsResumeRecording(int connection = 0);": {
+    "prefix": "CPHSlobsResumeRecording",
+    "description": "Resume Streamlabs Desktop recording.",
+    "body": [
+      "CPH.SlobsResumeRecording(${1:int connection = 0});"
+    ]
+  },
+  "void SlobsSetScene(string sceneName, int connection = 0);": {
+    "prefix": "CPHSlobsSetScene",
+    "description": "Set the Streamlabs Desktop scene.",
+    "body": [
+      "CPH.SlobsSetScene(${1:string sceneName}, ${2:int connection = 0});"
+    ]
+  },
+  "string SlobsGetCurrentScene(int connection = 0);": {
+    "prefix": "CPHSlobsGetCurrentScene",
+    "description": "Get the Streamlabs Desktop scene.",
+    "body": [
+      "CPH.SlobsGetCurrentScene(${1:int connection = 0});"
+    ]
+  },
+  "bool SlobsIsSourceVisible(string scene, string source, int connection = 0);": {
+    "prefix": "CPHSlobsIsSourceVisible",
+    "description": "See if a source is visible.",
+    "body": [
+      "CPH.SlobsIsSourceVisible(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void SlobsSetSourceVisibility(string scene, string source, bool visible, int connection = 0);": {
+    "prefix": "CPHSlobsSetSourceVisibility",
+    "description": "Set the visibility for a source.",
+    "body": [
+      "CPH.SlobsSetSourceVisibility(${1:string scene}, ${2:string source}, ${3:bool visible}, ${4:int connection = 0});"
+    ]
+  },
+  "void SlobsShowSource(string scene, string source, int connection = 0);": {
+    "prefix": "CPHSlobsShowSource",
+    "description": "Show a source.",
+    "body": [
+      "CPH.SlobsShowSource(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void SlobsHideSource(string scene, string source, int connection = 0);": {
+    "prefix": "CPHSlobsHideSource",
+    "description": "Hide a source.",
+    "body": [
+      "CPH.SlobsHideSource(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void SlobsHideGroupsSources(string scene, string groupName, int connection = 0);": {
+    "prefix": "CPHSlobsHideGroupsSources",
+    "description": "Hide all sources from a group.",
+    "body": [
+      "CPH.SlobsHideGroupsSources(${1:string scene}, ${2:string groupName}, ${3:int connection = 0});"
+    ]
+  },
+  "string SlobsSetRandomGroupSourceVisible(string scene, string groupName, int connection = 0);": {
+    "prefix": "CPHSlobsSetRandomGroupSourceVisible",
+    "description": "Set a random group source visible.",
+    "body": [
+      "CPH.SlobsSetRandomGroupSourceVisible(${1:string scene}, ${2:string groupName}, ${3:int connection = 0});"
+    ]
+  },
+  "List<string> SlobsGetGroupSources(string scene, string groupName, int connection = 0);": {
+    "prefix": "CPHSlobsGetGroupSources",
+    "description": "Get the sources from a group.",
+    "body": [
+      "CPH.SlobsGetGroupSources(${1:string scene}, ${2:string groupName}, ${3:int connection = 0});"
+    ]
+  },
+  "void SlobsSetBrowserSource(string scene, string source, string url, int connection = 0);": {
+    "prefix": "CPHSlobsSetBrowserSource",
+    "description": "Set the URL for a browser source.",
+    "body": [
+      "CPH.SlobsSetBrowserSource(${1:string scene}, ${2:string source}, ${3:string url}, ${4:int connection = 0});"
+    ]
+  },
+  "void SlobsSetGdiText(string scene, string source, string text, int connection = 0);": {
+    "prefix": "CPHSlobsSetGdiText",
+    "description": "Set the text for a GDI text source.",
+    "body": [
+      "CPH.SlobsSetGdiText(${1:string scene}, ${2:string source}, ${3:string text}, ${4:int connection = 0});"
+    ]
+  },
+  "bool SlobsIsFilterEnabled(string scene, string filterName, int connection = 0);": {
+    "prefix": "CPHSlobsIsSceneFilterEnabled",
+    "description": "Check if the scene filter is enabled.",
+    "body": [
+      "CPH.SlobsIsFilterEnabled(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "bool SlobsIsFilterEnabled(string scene, string source, string filterName, int connection = 0);": {
+    "prefix": "CPHSlobsIsSourceFilterEnabled",
+    "description": "Check if the source filter is enabled.",
+    "body": [
+      "CPH.SlobsIsFilterEnabled(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void SlobsSetFilterState(string scene, string filterName, int state, int connection = 0);": {
+    "prefix": "CPHSlobsSetSceneFilterState",
+    "description": "Set the filter state on a scene.",
+    "body": [
+      "CPH.SlobsSetFilterState(${1:string scene}, ${2:string filterName}, ${3:int state}, ${4:int connection = 0});"
+    ]
+  },
+  "void SlobsSetFilterState(string scene, string source, string filterName, int state, int connection = 0);": {
+    "prefix": "CPHSlobsSetSourceFilterState",
+    "description": "Set the filter state on a source.",
+    "body": [
+      "CPH.SlobsSetFilterState(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int state}, ${5:int connection = 0});"
+    ]
+  },
+  "void SlobsShowFilter(string scene, string filterName, int connection = 0);": {
+    "prefix": "CPHSlobsShowSceneFilter",
+    "description": "Show a scene filter.",
+    "body": [
+      "CPH.SlobsShowFilter(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "void SlobsShowFilter(string scene, string source, string filterName, int connection = 0);": {
+    "prefix": "CPHSlobsShowSourceFilter",
+    "description": "Show a source filter.",
+    "body": [
+      "CPH.SlobsShowFilter(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void SlobsHideFilter(string scene, string filterName, int connection = 0);": {
+    "prefix": "CPHSlobsHideSceneFilter",
+    "description": "Hide a scene filter.",
+    "body": [
+      "CPH.SlobsHideFilter(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "void SlobsHideFilter(string scene, string source, string filterName, int connection = 0);": {
+    "prefix": "CPHSlobsHideSourceFilter",
+    "description": "Hide a source filter.",
+    "body": [
+      "CPH.SlobsHideFilter(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void SlobsToggleFilter(string scene, string filterName, int connection = 0);": {
+    "prefix": "CPHSlobsToggleSceneFilter",
+    "description": "Toggle a scene filter.",
+    "body": [
+      "CPH.SlobsToggleFilter(${1:string scene}, ${2:string filterName}, ${3:int connection = 0});"
+    ]
+  },
+  "void SlobsToggleFilter(string scene, string source, string filterName, int connection = 0);": {
+    "prefix": "CPHSlobsToggleSourceFilter",
+    "description": "Toggle a source filter.",
+    "body": [
+      "CPH.SlobsToggleFilter(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
+    ]
+  },
+  "void SlobsSetRandomFilterState(string scene, int state, int connection = 0);": {
+    "prefix": "CPHSlobsSetRandomSceneFilterState",
+    "description": "Set random scene filter state.",
+    "body": [
+      "CPH.SlobsSetRandomFilterState(${1:string scene}, ${2:int state}, ${3:int connection = 0});"
+    ]
+  },
+  "void SlobsSetRandomFilterState(string scene, string source, int state, int connection = 0);": {
+    "prefix": "CPHSlobsSetRandomSourceFilterState",
+    "description": "Toggle a source filter.",
+    "body": [
+      "CPH.SlobsSetRandomFilterState(${1:string scene}, ${2:string source}, ${3:int state}, ${4:int connection = 0});"
+    ]
+  },
+  "void SlobsSetSourceMuteState(string scene, string source, int state, int connection = 0);": {
+    "prefix": "CPHSlobsSetSourceMuteState",
+    "description": "Set the mute state on a source.",
+    "body": [
+      "CPH.SlobsSetSourceMuteState(${1:string scene}, ${2:string source}, ${3:int state}, ${4:int connection = 0});"
+    ]
+  },
+  "void SlobsSourceMute(string scene, string source, int connection = 0);": {
+    "prefix": "CPHSlobsSourceMute",
+    "description": "Mute a source.",
+    "body": [
+      "CPH.SlobsSourceMute(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void SlobsSourceUnMute(string scene, string source, int connection = 0);": {
+    "prefix": "CPHSlobsSourceUnMute",
+    "description": "Unmute a source.",
+    "body": [
+      "CPH.SlobsSourceUnMute(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "void SlobsSourceMuteToggle(string scene, string source, int connection = 0);": {
+    "prefix": "CPHSlobsSourceMuteToggle",
+    "description": "Mute toggle a source.",
+    "body": [
+      "CPH.SlobsSourceMuteToggle(${1:string scene}, ${2:string source}, ${3:int connection = 0});"
+    ]
+  },
+  "int TtsSpeak(string voiceAlias, string message, bool badWordFilter = false);": {
+    "prefix": "CPHTtsSpeak",
+    "description": "Send a TTS request to Speaker.bot.",
+    "body": [
+      "CPH.TtsSpeak(${1:string voiceAlias}, ${2:string message}, ${3:bool badWordFilter = false});"
+    ]
+  },
+  "void StreamDeckSetBackgroundColor(string buttonId, string color);": {
+    "prefix": "CPHStreamDeckSetBackgroundColor",
+    "description": "Set the background color of a button.",
+    "body": [
+      "CPH.StreamDeckSetBackgroundColor(${1:string buttonId}, ${2:string color});"
+    ]
+  },
+  "void StreamDeckSetBackgroundColor(string buttonId, string color, int state);": {
+    "prefix": "CPHStreamDeckSetBackgroundColorAndState",
+    "description": "Set the background color and the state of a button.",
+    "body": [
+      "CPH.StreamDeckSetBackgroundColor(${1:string buttonId}, ${2:string color}, ${3:int state});"
+    ]
+  },
+  "void StreamDeckSetBackgroundUrl(string buttonId, string imageUrl);": {
+    "prefix": "CPHStreamDeckSetBackgroundUrl",
+    "description": "Set the background image url of a button.",
+    "body": [
+      "CPH.StreamDeckSetBackgroundUrl(${1:string buttonId}, ${2:string imageUrl});"
+    ]
+  },
+  "void StreamDeckSetBackgroundUrl(string buttonId, string imageUrl, string color);": {
+    "prefix": "CPHStreamDeckSetBackgroundUrlWithColor",
+    "description": "Set the background image url with color of a button.",
+    "body": [
+      "CPH.StreamDeckSetBackgroundUrl(${1:string buttonId}, ${2:string imageUrl}, ${3:string color});"
+    ]
+  },
+  "void StreamDeckSetBackgroundUrl(string buttonId, string imageUrl, int state);": {
+    "prefix": "CPHStreamDeckSetBackgroundUrlAndState",
+    "description": "Set the background image url and the state of a button.",
+    "body": [
+      "CPH.StreamDeckSetBackgroundUrl(${1:string buttonId}, ${2:string imageUrl}, ${3:int state});"
+    ]
+  },
+  "void StreamDeckSetBackgroundUrl(string buttonId, string imageUrl, string color, int state);": {
+    "prefix": "CPHStreamDeckSetBackgroundUrlWithColorAndState",
+    "description": "Set the background image url with color and state of a button.",
+    "body": [
+      "CPH.StreamDeckSetBackgroundUrl(${1:string buttonId}, ${2:string imageUrl}, ${3:string color}, ${4:int state});"
+    ]
+  },
+  "void StreamDeckSetBackgroundLocal(string buttonId, string imageFile);": {
+    "prefix": "CPHStreamDeckSetBackgroundLocal",
+    "description": "Set the file for the background image of a button.",
+    "body": [
+      "CPH.StreamDeckSetBackgroundLocal(${1:string buttonId}, ${2:string imageFile});"
+    ]
+  },
+  "void StreamDeckSetBackgroundLocal(string buttonId, string imageFile, string color);": {
+    "prefix": "CPHStreamDeckSetBackgroundLocalWithColor",
+    "description": "Set the file for the background image with color of a button.",
+    "body": [
+      "CPH.StreamDeckSetBackgroundLocal(${1:string buttonId}, ${2:string imageFile}, ${3:string color});"
+    ]
+  },
+  "void StreamDeckSetBackgroundLocal(string buttonId, string imageFile, int state);": {
+    "prefix": "CPHStreamDeckSetBackgroundLocalAndState",
+    "description": "Set the file for the background image and the state of a button.",
+    "body": [
+      "CPH.StreamDeckSetBackgroundLocal(${1:string buttonId}, ${2:string imageFile}, ${3:int state});"
+    ]
+  },
+  "void StreamDeckSetBackgroundLocal(string buttonId, string imageFile, string color, int state);": {
+    "prefix": "CPHStreamDeckSetBackgroundLocalWithColorAndState",
+    "description": "Set the file for the background image with color and state of a button.",
+    "body": [
+      "CPH.StreamDeckSetBackgroundLocal(${1:string buttonId}, ${2:string imageFile}, ${3:string color}, ${4:int state});"
+    ]
+  },
+  "void StreamDeckSetTitle(string buttonId, string title);": {
+    "prefix": "CPHStreamDeckSetTitle",
+    "description": "Set the title of a button.",
+    "body": [
+      "CPH.StreamDeckSetTitle(${1:string buttonId}, ${2:string title});"
+    ]
+  },
+  "void StreamDeckSetTitle(string buttonId, string title, int state);": {
+    "prefix": "CPHStreamDeckSetTitleAndState",
+    "description": "Set the title and state of a button.",
+    "body": [
+      "CPH.StreamDeckSetTitle(${1:string buttonId}, ${2:string title}, ${3:int state});"
+    ]
+  },
+  "void StreamDeckSetState(string buttonId, int state);": {
+    "prefix": "CPHStreamDeckSetState",
+    "description": "Set the state of a button.",
+    "body": [
+      "CPH.StreamDeckSetState(${1:string buttonId}, ${2:int state});"
+    ]
+  },
+  "void StreamDeckToggleState(string buttonId);": {
+    "prefix": "CPHStreamDeckToggleState",
+    "description": "Set the state of a button.",
+    "body": [
+      "CPH.StreamDeckToggleState(${1:string buttonId});"
+    ]
+  },
+  "void StreamDeckSetValue(string buttonId, string value);": {
+    "prefix": "CPHStreamDeckSetValue",
+    "description": "Set the value of a button.",
+    "body": [
+      "CPH.StreamDeckSetValue(${1:string buttonId}, ${2:string value});"
+    ]
+  },
+  "void StreamDeckShowAlert(string buttonId);": {
+    "prefix": "CPHStreamDeckShowAlert",
+    "description": "Show an error notification on a button.",
+    "body": [
+      "CPH.StreamDeckShowAlert(${1:string buttonId});"
+    ]
+  },
+  "void StreamDeckShowOk(string buttonId);": {
+    "prefix": "CPHStreamDeckShowOk",
+    "description": "Show a success notification on a button.",
+    "body": [
+      "CPH.StreamDeckShowOk(${1:string buttonId});"
+    ]
+  },
+  "void DiscordPostTextToWebhook(string webhookUrl, string content, string username = null, bool textToSpeech = false);": {
+    "prefix": "CPHDiscordPostTextToWebhook",
+    "description": "Post a basic text message to a Discord webhook.",
+    "body": [
+      "CPH.DiscordPostTextToWebhook(${1:string webhookUrl}, ${2:string content}, ${3:string username = null}, ${4:bool textToSpeech = false});"
+    ]
+  },
+  "void LumiaSetToDefault();": {
+    "prefix": "CPHLumiaSetToDefault",
+    "description": "Set your lights to default Lumia Stream configuration.",
+    "body": [
+      "CPH.LumiaSetToDefault();"
+    ]
+  },
+  "void LumiaSendCommand(string command);": {
+    "prefix": "CPHLumiaSendCommand",
+    "description": "Send a command to Lumia Stream.",
+    "body": [
+      "CPH.LumiaSendCommand(${1:string command});"
+    ]
+  },
+  "void VoiceModSelectVoice(string voiceId);": {
+    "prefix": "CPHVoiceModSelectVoice",
+    "description": "Select your VoiceMod voice.",
+    "body": [
+      "CPH.VoiceModSelectVoice(${1:string voiceId});"
+    ]
+  },
+  "string VoiceModGetCurrentVoice();": {
+    "prefix": "CPHVoiceModGetCurrentVoice",
+    "description": "Get your current voice.",
+    "body": [
+      "CPH.VoiceModGetCurrentVoice();"
+    ]
+  },
+  "bool VoiceModVoiceChangerOn();": {
+    "prefix": "CPHVoiceModVoiceChangerOn",
+    "description": "Turn your voice changer on.",
+    "body": [
+      "CPH.VoiceModVoiceChangerOn();"
+    ]
+  },
+  "bool VoiceModVoiceChangerOff();": {
+    "prefix": "CPHVoiceModVoiceChangerOff",
+    "description": "Turn your voice changer off.",
+    "body": [
+      "CPH.VoiceModVoiceChangerOff();"
+    ]
+  },
+  "bool VoiceModGetVoiceChangerStatus();": {
+    "prefix": "CPHVoiceModGetVoiceChangerStatus",
+    "description": "Get your voice changer status.",
+    "body": [
+      "CPH.VoiceModGetVoiceChangerStatus();"
+    ]
+  },
+  "bool VoiceModHearMyVoiceOn();": {
+    "prefix": "CPHVoiceModHearMyVoiceOn",
+    "description": "Turn hear my voice on.",
+    "body": [
+      "CPH.VoiceModHearMyVoiceOn();"
+    ]
+  },
+  "bool VoiceModHearMyVoiceOff();": {
+    "prefix": "CPHVoiceModHearMyVoiceOff",
+    "description": "Turn hear my voice off.",
+    "body": [
+      "CPH.VoiceModHearMyVoiceOff();"
+    ]
+  },
+  "bool VoiceModGetHearMyselfStatus();": {
+    "prefix": "CPHVoiceModGetHearMyselfStatus",
+    "description": "Get your hear myself status.",
+    "body": [
+      "CPH.VoiceModGetHearMyselfStatus();"
+    ]
+  },
+  "void VoiceModCensorOn();": {
+    "prefix": "CPHVoiceModCensorOn",
+    "description": "Turn the voice censor on.",
+    "body": [
+      "CPH.VoiceModCensorOn();"
+    ]
+  },
+  "void VoiceModCensorOff();": {
+    "prefix": "CPHVoiceModCensorOff",
+    "description": "Turn the voice censor off.",
+    "body": [
+      "CPH.VoiceModCensorOff();"
+    ]
+  }
+}
