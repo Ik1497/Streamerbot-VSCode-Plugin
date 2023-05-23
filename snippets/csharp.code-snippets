@@ -1142,7 +1142,7 @@
   },
   "bool TwitchUpdateChannelGuestStarSettings(bool isModeratorSendLiveEnabled = null, int slotCount = null, bool isBrowserSourceAudioEnabled = null, string groupLayout = null, bool regenerateBrowserSource = null);": {
     "prefix": "CPHTwitchUpdateChannelGuestStarSettings",
-    "description": "Start a raid by a user name.",
+    "description": "Update the guest star settings of this channel.",
     "body": [
       "CPH.TwitchUpdateChannelGuestStarSettings(${1:bool? isModeratorSendLiveEnabled = null}, ${2:int? slotCount = null}, ${3:bool? isBrowserSourceAudioEnabled = null}, ${4:string groupLayout = null}, ${5:bool? regenerateBrowserSource = null});"
     ]
