@@ -519,21 +519,21 @@
   },
   "void CommandResetGlobalCooldown(string id);": {
     "prefix": "CPHCommandResetGlobalCooldown",
-    "description": "Reset the command global cooldown.",
+    "description": "Reset the global cooldown on a command.",
     "body": [
       "CPH.CommandResetGlobalCooldown(${1:string id});"
     ]
   },
   "void CommandResetUserCooldown(string id, string userId);": {
     "prefix": "CPHCommandResetUserCooldown",
-    "description": "Reset the command user cooldown.",
+    "description": "Reset the user cooldown on a command.",
     "body": [
       "CPH.CommandResetUserCooldown(${1:string id}, ${2:string userId});"
     ]
   },
   "void CommandResetAllUserCooldowns(string id);": {
     "prefix": "CPHCommandResetAllUserCooldowns",
-    "description": "Reset all the command user cooldowns.",
+    "description": "Reset all the user cooldowns on a command.",
     "body": [
       "CPH.CommandResetAllUserCooldowns(${1:string id});"
     ]
@@ -1610,8 +1610,8 @@
     ]
   },
   "long ObsConvertRgb(int a, int r, int g, int b);": {
-    "prefix": "CPHObsConvertRgb",
-    "description": "Convert RGB to the OBS Studio color system.",
+    "prefix": "CPHObsConvertArgb",
+    "description": "Convert ARGB to the OBS Studio color system.",
     "body": [
       "CPH.ObsConvertRgb(${1:int a}, ${2:int r}, ${3:int g}, ${4:int b});"
     ]
@@ -1624,8 +1624,8 @@
     ]
   },
   "void ObsSetColorSourceColor(string scene, string source, int a, int r, int g, int b, int connection = 0);": {
-    "prefix": "CPHObsSetColorSourceRgbColor",
-    "description": "Set the RGB color on an OBS Studio color source.",
+    "prefix": "CPHObsSetColorSourceArgbColor",
+    "description": "Set the ARGB color on an OBS Studio color source.",
     "body": [
       "CPH.ObsSetColorSourceColor(${1:string scene}, ${2:string source}, ${3:int a}, ${4:int r}, ${5:int g}, ${6:int b}, ${7:int connection = 0});"
     ]
