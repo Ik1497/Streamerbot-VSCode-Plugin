@@ -1513,7 +1513,7 @@
   },
   "void ObsSetSourceMuteState(string scene, string source, int state, int connection = 0);": {
     "prefix": "CPHObsSetSourceMuteState",
-    "description": "Set the mute state of an OBS Studio source.",
+    "description": "Set an OBS Studio source mute state.",
     "body": [
       "CPH.ObsSetSourceMuteState(${1:string scene}, ${2:string source}, ${3:int state}, ${4:int connection = 0});"
     ]
