@@ -1086,7 +1086,7 @@
   },
   "StreamMarker CreateStreamMarker(string description);": {
     "prefix": "CPHCreateStreamMarker",
-    "description": "Create a stream marker at the current poiny in your stream.",
+    "description": "Create a stream marker at the current point in your stream.",
     "body": [
       "CPH.CreateStreamMarker(${1:string description});"
     ]
@@ -2059,7 +2059,7 @@
   },
   "void StreamDeckToggleState(string buttonId);": {
     "prefix": "CPHStreamDeckToggleState",
-    "description": "Set the state of a button.",
+    "description": "Toggle the state of a button.",
     "body": [
       "CPH.StreamDeckToggleState(${1:string buttonId});"
     ]
@@ -2073,14 +2073,14 @@
   },
   "void StreamDeckShowAlert(string buttonId);": {
     "prefix": "CPHStreamDeckShowAlert",
-    "description": "Show an error notification on a button.",
+    "description": "Show an error alert on a button.",
     "body": [
       "CPH.StreamDeckShowAlert(${1:string buttonId});"
     ]
   },
   "void StreamDeckShowOk(string buttonId);": {
     "prefix": "CPHStreamDeckShowOk",
-    "description": "Show a success notification on a button.",
+    "description": "Show a success alert on a button.",
     "body": [
       "CPH.StreamDeckShowOk(${1:string buttonId});"
     ]
