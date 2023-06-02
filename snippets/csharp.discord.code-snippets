@@ -1,8 +1,0 @@
-{
-  "bool DiscordPostTextToWebhook()": {
-    "prefix": ["CPHDiscordPostTextToWebhook"],
-    "body": [
-      "CPH.DiscordPostTextToWebhook(${1:string webhookUrl}, ${2:string content}, ${3:string username = null}, ${4:bool textToSpeech = false});"
-    ]
-  }
-}

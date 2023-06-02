@@ -1,8 +1,0 @@
-{
-  "void SendYouTubeMessage()": {
-    "prefix": ["CPHSendYouTubeMessage"],
-    "body": [
-      "CPH.SendYouTubeMessage(${1:string message});"
-    ]
-  }
-}

@@ -19,7 +19,11 @@
     "snippets": [
       {
         "language": "csharp",
-        "path": "./snippets/csharp.general-templates.code-snippets"
+        "path": "./snippets/csharp.code-snippets"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/csharp.templates.code-snippets"
       },
       {
         "language": "csharp",
@@ -28,62 +32,6 @@
       {
         "language": "csharp",
         "path": "./snippets/csharp.variable-types.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.general.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.commands.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.global-variables.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.server-and-clients.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.groups.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.twitch.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.twitch-templates.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.youtube.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.obs-studio.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.streamlabs-desktop.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.speakerbot.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.voicemod.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.lumia-stream.code-snippets"
-      },
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.discord.code-snippets"
       }
     ]
   }
