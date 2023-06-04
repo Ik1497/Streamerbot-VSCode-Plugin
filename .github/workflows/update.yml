@@ -1,5 +1,9 @@
-name: Update Version
-on: workflow_dispatch
+name: Create .VSIX file
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 jobs:
   update_version:
     runs-on: ubuntu-latest
