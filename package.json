@@ -3,7 +3,7 @@
   "displayName": "Streamer.bot C# Snippets v0.1.22",
   "description": "C# snippets of all CPH methods; Using Directives; And code templates",
   "publisher": "Ik1497",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "repository": {
     "type": "git",
     "url": "https://github.com/Ik1497/Streamerbot-VSCode-Plugin"
