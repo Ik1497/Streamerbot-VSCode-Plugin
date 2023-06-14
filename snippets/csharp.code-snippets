@@ -48,6 +48,27 @@
       "CPH.GetEventType();"
     ]
   },
+  "void TriggerCodeEvent(string triggerName, string eventName, string[] categories);": {
+    "prefix": "CPHRegisterCustomTrigger",
+    "description": "Trigger a custom event.",
+    "body": [
+      "CPH.TriggerCodeEvent(${1:string triggerName}, ${2:string eventName}, ${3:string[] categories});"
+    ]
+  },
+  "void TriggerCodeEvent(string eventName, bool useArgs = true);": {
+    "prefix": "CPHTriggerCodeEvent",
+    "description": "Trigger a custom event.",
+    "body": [
+      "CPH.TriggerCodeEvent(${1:string eventName}, ${2:bool useArgs = true});"
+    ]
+  },
+  "void TriggerCodeEvent(string eventName, Dictionary<string, object> args);": {
+    "prefix": "CPHTriggerCodeEventWithCustomArgs",
+    "description": "Trigger a custom event.",
+    "body": [
+      "CPH.TriggerCodeEvent(${1:string eventName}, ${2:Dictionary<string, object> args});"
+    ]
+  },
   "bool RunAction(string actionName, bool runImmediately = true);": {
     "prefix": "CPHRunAction",
     "description": "Run an action.",
@@ -664,6 +685,13 @@
       "CPH.TwitchDeleteChatMessage(${1:string messageId}, ${2:bool bot = true});"
     ]
   },
+  "void TwitchReplyToMessage(string message, string replyId, bool bot = true);": {
+    "prefix": "CPHTwitchReplyToMessage",
+    "description": "Reply to a Twitch message.",
+    "body": [
+      "CPH.TwitchReplyToMessage(${1:string message}, ${2:string replyId}, ${3:bool bot = true});"
+    ]
+  },
   "bool TwitchClearChannelTags();": {
     "prefix": "CPHTwitchClearChannelTags",
     "description": "Clear all the channel tags from your channel.",
@@ -832,6 +860,13 @@
       "CPH.UpdateRewardCost(${1:string rewardId}, ${2:int cost}, ${3:bool additive = null});"
     ]
   },
+  "void UpdateRewardBackgroundColor(string rewardId, string backgroundColor);": {
+    "prefix": "CPHUpdateRewardBackgroundColor",
+    "description": "Update the background color of a Twitch reward.",
+    "body": [
+      "CPH.UpdateRewardBackgroundColor(${1:string rewardId}, ${2:string backgroundColor});"
+    ]
+  },
   "void UpdateRewardCooldown(string rewardId, int cooldown, bool additive = null);": {
     "prefix": "CPHUpdateRewardCooldown",
     "description": "Update the cooldown of a Twitch reward.",
@@ -839,11 +874,11 @@
       "CPH.UpdateRewardCooldown(${1:string rewardId}, ${2:int cooldown}, ${3:bool additive = null});"
     ]
   },
-  "bool UpdateReward(string rewardId, string title = null, string prompt = null, int cost = null);": {
+  "bool UpdateReward(string rewardId, string title = null, string prompt = null, int cost = null, string backroundColor = null);": {
     "prefix": "CPHUpdateReward",
     "description": "Update a Twitch reward.",
     "body": [
-      "CPH.UpdateReward(${1:string rewardId}, ${2:string title = null}, ${3:string prompt = null}, ${4:int? cost = null});"
+      "CPH.UpdateReward(${1:string rewardId}, ${2:string title = null}, ${3:string prompt = null}, ${4:int? cost = null}, ${5:string backroundColor = null});"
     ]
   },
   "void TwitchRedemptionFulfill(string rewardId, string redemptionId);": {
