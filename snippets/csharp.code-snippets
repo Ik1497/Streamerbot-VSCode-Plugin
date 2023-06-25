@@ -48,11 +48,11 @@
       "CPH.GetEventType();"
     ]
   },
-  "void TriggerCodeEvent(string triggerName, string eventName, string[] categories);": {
+  "void RegisterCustomTrigger(string triggerName, string eventName, string[] categories);": {
     "prefix": "CPHRegisterCustomTrigger",
-    "description": "Trigger a custom event.",
+    "description": "Register a custom trigger.",
     "body": [
-      "CPH.TriggerCodeEvent(${1:string triggerName}, ${2:string eventName}, ${3:string[] categories});"
+      "CPH.RegisterCustomTrigger(${1:string triggerName}, ${2:string eventName}, ${3:string[] categories});"
     ]
   },
   "void TriggerCodeEvent(string eventName, bool useArgs = true);": {
@@ -64,7 +64,7 @@
   },
   "void TriggerCodeEvent(string eventName, Dictionary<string, object> args);": {
     "prefix": "CPHTriggerCodeEventWithCustomArgs",
-    "description": "Trigger a custom event.",
+    "description": "Trigger a custom event with custom args.",
     "body": [
       "CPH.TriggerCodeEvent(${1:string eventName}, ${2:Dictionary<string, object> args});"
     ]
@@ -2209,6 +2209,41 @@
     "description": "Turn the voice censor off.",
     "body": [
       "CPH.VoiceModCensorOff();"
+    ]
+  },
+  "bool VTubeStudioLoadModelById(string modelId);": {
+    "prefix": "CPHVTubeStudioLoadModelById",
+    "description": "Load a VTube Studio model by its id.",
+    "body": [
+      "CPH.VTubeStudioLoadModelById(${1:string modelId});"
+    ]
+  },
+  "bool VTubeStudioLoadModelByName(string modelName);": {
+    "prefix": "CPHVTubeStudioLoadModelByName",
+    "description": "Load a VTube Studio model by its name.",
+    "body": [
+      "CPH.VTubeStudioLoadModelByName(${1:string modelName});"
+    ]
+  },
+  "bool VTubeStudioMoveModel(double seconds, bool relative, double posX = null, double posY = null, double rotation = null, double size = null);": {
+    "prefix": "CPHVTubeStudioMoveModel",
+    "description": "Move the current VTube Studio model.",
+    "body": [
+      "CPH.VTubeStudioMoveModel(${1:double seconds}, ${2:bool relative}, ${3:double? posX = null}, ${4:double? posY = null}, ${5:double? rotation = null}, ${6:double? size = null});"
+    ]
+  },
+  "bool VTubeStudioTriggerHotkeyById(string hotkeyId);": {
+    "prefix": "CPHVTubeStudioTriggerHotkeyById",
+    "description": "Trigger a VTube Studio hotkey by its id.",
+    "body": [
+      "CPH.VTubeStudioTriggerHotkeyById(${1:string hotkeyId});"
+    ]
+  },
+  "bool VTubeStudioTriggerHotkeyByName(string hotkeyName);": {
+    "prefix": "CPHVTubeStudioTriggerHotkeyByName",
+    "description": "Trigger a VTube Studio hotkey by its name.",
+    "body": [
+      "CPH.VTubeStudioTriggerHotkeyByName(${1:string hotkeyName});"
     ]
   }
 }
