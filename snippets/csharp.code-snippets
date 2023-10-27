@@ -237,6 +237,20 @@
       "CPH.SetArgument(${1:string variableName}, ${2:object value});"
     ]
   },
+  "void ShowToastNotification(string title, string message, string attribution = null, string iconPath = null);": {
+    "prefix": "CPHShowToastNotification",
+    "description": "Show a toast notification.",
+    "body": [
+      "CPH.ShowToastNotification(${1:string title}, ${2:string message}, ${3:string attribution = null}, ${4:string iconPath = null});"
+    ]
+  },
+  "void ShowToastNotificationWithId(string id, string title, string message, string attribution = null, string iconPath = null);": {
+    "prefix": "CPHShowToastNotificationWithId",
+    "description": "Show a toast notification with an id.",
+    "body": [
+      "CPH.ShowToastNotificationWithId(${1:string id}, ${2:string title}, ${3:string message}, ${4:string attribution = null}, ${5:string iconPath = null});"
+    ]
+  },
   "T GetGlobalVar(string varName, bool persisted = true);": {
     "prefix": "CPHGetGlobalVar",
     "description": "Get a global variable.",
@@ -286,6 +300,48 @@
       "CPH.UnsetTwitchUser(${1:string userName}, ${2:bool persisted = true});"
     ]
   },
+  "void SetTwitchUserVarById(string userId, string varName, object value, bool persisted = true);": {
+    "prefix": "CPHSetTwitchUserVarById",
+    "description": "Set a Twitch user's global variable.",
+    "body": [
+      "CPH.SetTwitchUserVarById(${1:string userId}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
+    ]
+  },
+  "void SetTwitchUsersVarById(List<string> userIds, string varName, object value, bool persisted = true);": {
+    "prefix": "CPHSetTwitchUsersVarById",
+    "description": "Set the global variables for a list of users.",
+    "body": [
+      "CPH.SetTwitchUsersVarById(${1:List<string> userIds}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
+    ]
+  },
+  "void UnsetTwitchUserVarById(string userId, string varName, bool persisted = true);": {
+    "prefix": "CPHUnsetTwitchUserVarById",
+    "description": "Unset a global variable from Twitch user by its id.",
+    "body": [
+      "CPH.UnsetTwitchUserVarById(${1:string userId}, ${2:string varName}, ${3:bool persisted = true});"
+    ]
+  },
+  "void UnsetTwitchUserById(string userId, bool persisted = true);": {
+    "prefix": "CPHUnsetTwitchUserById",
+    "description": "Unset all global variables a from Twitch user by its id.",
+    "body": [
+      "CPH.UnsetTwitchUserById(${1:string userId}, ${2:bool persisted = true});"
+    ]
+  },
+  "T GetTwitchUserVarById(string userId, string varName, bool persisted = true);": {
+    "prefix": "CPHGetTwitchUserVarById",
+    "description": "Get a global variable from a Twitch user by its id.",
+    "body": [
+      "CPH.GetTwitchUserVarById<T>(${1:string userId}, ${2:string varName}, ${3:bool persisted = true});"
+    ]
+  },
+  "List<UserVariableValue<T>> GetTwitchUsersVar(string varName, bool persisted = true);": {
+    "prefix": "CPHGetTwitchUsersVar",
+    "description": "Get all global variable values from a var name.",
+    "body": [
+      "CPH.GetTwitchUsersVar(${1:string varName}, ${2:bool persisted = true});"
+    ]
+  },
   "T GetYouTubeUserVar(string userName, string varName, bool persisted = true);": {
     "prefix": "CPHGetYouTubeUserVar",
     "description": "Get a YouTube user globale variable.",
@@ -314,6 +370,48 @@
       "CPH.UnsetYouTubeUser(${1:string userName}, ${2:bool persisted = true});"
     ]
   },
+  "void SetYouTubeUserVarById(string userId, string varName, object value, bool persisted = true);": {
+    "prefix": "CPHSetYouTubeUserVarById",
+    "description": "Set a YouTube user's global variable.",
+    "body": [
+      "CPH.SetYouTubeUserVarById(${1:string userId}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
+    ]
+  },
+  "void SetYouTubeUsersVarById(List<string> userIds, string varName, object value, bool persisted = true);": {
+    "prefix": "CPHSetYouTubeUsersVarById",
+    "description": "Set the global variables for a list of users.",
+    "body": [
+      "CPH.SetYouTubeUsersVarById(${1:List<string> userIds}, ${2:string varName}, ${3:object value}, ${4:bool persisted = true});"
+    ]
+  },
+  "void UnsetYouTubeUserVarById(string userId, string varName, bool persisted = true);": {
+    "prefix": "CPHUnsetYouTubeUserVarById",
+    "description": "Unset a global variable from YouTube user by its id.",
+    "body": [
+      "CPH.UnsetYouTubeUserVarById(${1:string userId}, ${2:string varName}, ${3:bool persisted = true});"
+    ]
+  },
+  "void UnsetYouTubeUserById(string userId, bool persisted = true);": {
+    "prefix": "CPHUnsetYouTubeUserById",
+    "description": "Unset all global variables a from YouTube user by its id.",
+    "body": [
+      "CPH.UnsetYouTubeUserById(${1:string userId}, ${2:bool persisted = true});"
+    ]
+  },
+  "T GetYouTubeUserVarById(string userId, string varName, bool persisted = true);": {
+    "prefix": "CPHGetYouTubeUserVarById",
+    "description": "Get a global variable from a YouTube user by its id.",
+    "body": [
+      "CPH.GetYouTubeUserVarById<T>(${1:string userId}, ${2:string varName}, ${3:bool persisted = true});"
+    ]
+  },
+  "List<UserVariableValue<T>> GetYouTubeUsersVar(string varName, bool persisted = true);": {
+    "prefix": "CPHGetYouTubeUsersVar",
+    "description": "Get all global variable values from a var name.",
+    "body": [
+      "CPH.GetYouTubeUsersVar(${1:string varName}, ${2:bool persisted = true});"
+    ]
+  },
   "bool UserIdInGroup(string userId, string groupName);": {
     "prefix": "CPHUserIdInGroup",
     "description": "Check if a user is in a group by id.",
@@ -328,39 +426,11 @@
       "CPH.ClearUsersFromGroup(${1:string groupName});"
     ]
   },
-  "bool UserInGroup(int userId, string groupName);": {
-    "prefix": "CPHTwitchUserInGroup",
-    "description": "Check if a user is in a group.",
-    "body": [
-      "CPH.UserInGroup(${1:int userId}, ${2:string groupName});"
-    ]
-  },
-  "bool UserInGroup(string userId, string groupName);": {
-    "prefix": "CPHYouTubeUserInGroup",
-    "description": "Check if a user is in a group.",
-    "body": [
-      "CPH.UserInGroup(${1:string userId}, ${2:string groupName});"
-    ]
-  },
   "bool AddUserIdToGroup(string userId, string groupName);": {
     "prefix": "CPHAddUserIdToGroup",
     "description": "Add a user to a group by id.",
     "body": [
       "CPH.AddUserIdToGroup(${1:string userId}, ${2:string groupName});"
-    ]
-  },
-  "bool AddUserToGroup(int userId, string groupName);": {
-    "prefix": "CPHTwitchAddUserToGroup",
-    "description": "Add a user to a group.",
-    "body": [
-      "CPH.AddUserToGroup(${1:int userId}, ${2:string groupName});"
-    ]
-  },
-  "bool AddUserToGroup(string userId, string groupName);": {
-    "prefix": "CPHYouTubeAddUserToGroup",
-    "description": "Add a user to a group.",
-    "body": [
-      "CPH.AddUserToGroup(${1:string userId}, ${2:string groupName});"
     ]
   },
   "bool RemoveUserIdFromGroup(string userId, string groupName);": {
@@ -370,11 +440,39 @@
       "CPH.RemoveUserIdFromGroup(${1:string userId}, ${2:string groupName});"
     ]
   },
+  "bool UserInGroup(int userId, string groupName);": {
+    "prefix": "CPHTwitchUserInGroup",
+    "description": "Check if a user is in a group.",
+    "body": [
+      "CPH.UserInGroup(${1:int userId}, ${2:string groupName});"
+    ]
+  },
+  "bool AddUserToGroup(int userId, string groupName);": {
+    "prefix": "CPHTwitchAddUserToGroup",
+    "description": "Add a user to a group.",
+    "body": [
+      "CPH.AddUserToGroup(${1:int userId}, ${2:string groupName});"
+    ]
+  },
   "bool RemoveUserFromGroup(int userId, string groupName);": {
     "prefix": "CPHTwitchRemoveUserFromGroup",
     "description": "Remove a user from a group.",
     "body": [
       "CPH.RemoveUserFromGroup(${1:int userId}, ${2:string groupName});"
+    ]
+  },
+  "bool UserInGroup(string userId, string groupName);": {
+    "prefix": "CPHYouTubeUserInGroup",
+    "description": "Check if a user is in a group.",
+    "body": [
+      "CPH.UserInGroup(${1:string userId}, ${2:string groupName});"
+    ]
+  },
+  "bool AddUserToGroup(string userId, string groupName);": {
+    "prefix": "CPHYouTubeAddUserToGroup",
+    "description": "Add a user to a group.",
+    "body": [
+      "CPH.AddUserToGroup(${1:string userId}, ${2:string groupName});"
     ]
   },
   "bool RemoveUserFromGroup(string userId, string groupName);": {
@@ -1329,7 +1427,7 @@
       "CPH.ObsGetConnectionByName(${1:string name});"
     ]
   },
-  "void ObsIsStreaming(int connection = 0);": {
+  "bool ObsIsStreaming(int connection = 0);": {
     "prefix": "CPHObsIsStreaming",
     "description": "Check if OBS Studio is streaming.",
     "body": [
@@ -1579,6 +1677,13 @@
     "description": "Send a raw request to the OBS Studio websocket.",
     "body": [
       "CPH.ObsSendRaw(${1:string requestType}, ${2:string data}, ${3:int connection = 0});"
+    ]
+  },
+  "string ObsSendBatchRaw(string data, bool haltOnFailure = false, int executionType = 0, int connectionIdx = 0);": {
+    "prefix": "CPHObsSendBatchRaw",
+    "description": "Send a batch of raw requests to the OBS Studio websocket.",
+    "body": [
+      "CPH.ObsSendBatchRaw(${1:string data}, ${2:bool haltOnFailure = false}, ${3:int executionType = 0}, ${4:int connectionIdx = 0});"
     ]
   },
   "void ObsHideSourcesFilters(string scene, string source, int connection = 0);": {
@@ -2232,6 +2337,13 @@
       "CPH.VTubeStudioMoveModel(${1:double seconds}, ${2:bool relative}, ${3:double? posX = null}, ${4:double? posY = null}, ${5:double? rotation = null}, ${6:double? size = null});"
     ]
   },
+  "VTSModelPosition VTubeStudioGetModelPosition();": {
+    "prefix": "CPHVTubeStudioGetModelPosition",
+    "description": "Get the position of a VTube Studio model.",
+    "body": [
+      "CPH.VTubeStudioGetModelPosition();"
+    ]
+  },
   "bool VTubeStudioTriggerHotkeyById(string hotkeyId);": {
     "prefix": "CPHVTubeStudioTriggerHotkeyById",
     "description": "Trigger a VTube Studio hotkey by its id.",
@@ -2244,6 +2356,83 @@
     "description": "Trigger a VTube Studio hotkey by its name.",
     "body": [
       "CPH.VTubeStudioTriggerHotkeyByName(${1:string hotkeyName});"
+    ]
+  },
+  "bool VTubeStudioRandomColorTint();": {
+    "prefix": "CPHVTubeStudioRandomColorTint",
+    "description": "Set a random color tint in VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioRandomColorTint();"
+    ]
+  },
+  "bool VTubeStudioResetAllColorTints();": {
+    "prefix": "CPHVTubeStudioResetAllColorTints",
+    "description": "Reset all color tints in VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioResetAllColorTints();"
+    ]
+  },
+  "bool VTubeStudioColorTintAll(string hexColor, double mixWithSceneLighting = 0);": {
+    "prefix": "CPHVTubeStudioColorTintAll",
+    "description": "Color tint everything in VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioColorTintAll(${1:string hexColor}, ${2:double mixWithSceneLighting = 0});"
+    ]
+  },
+  "bool VTubeStudioColorTintByNumber(string hexColor, double mixWithSceneLighting, List<int> artMeshNumbers);": {
+    "prefix": "CPHVTubeStudioColorTintByNumber",
+    "description": "Color tint something by its number in VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioColorTintByNumber(${1:string hexColor}, ${2:double mixWithSceneLighting}, ${3:List<int> artMeshNumbers});"
+    ]
+  },
+  "bool VTubeStudioColorTintByNames(string hexColor, double mixWithSceneLighting, List<string> filterValues);": {
+    "prefix": "CPHVTubeStudioColorTintByNames",
+    "description": "Color tint something by names in VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioColorTintByNames(${1:string hexColor}, ${2:double mixWithSceneLighting}, ${3:List<string> filterValues});"
+    ]
+  },
+  "bool VTubeStudioColorTintByNameContains(string hexColor, double mixWithSceneLighting, List<string> filterValues);": {
+    "prefix": "CPHVTubeStudioColorTintByNameContains",
+    "description": "Color tint something that contains a name in VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioColorTintByNameContains(${1:string hexColor}, ${2:double mixWithSceneLighting}, ${3:List<string> filterValues});"
+    ]
+  },
+  "bool VTubeStudioColorTintByTags(string hexColor, double mixWithSceneLighting, List<string> filterValues);": {
+    "prefix": "CPHVTubeStudioColorTintByTags",
+    "description": "Color tint something by tags in VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioColorTintByTags(${1:string hexColor}, ${2:double mixWithSceneLighting}, ${3:List<string> filterValues});"
+    ]
+  },
+  "bool VTubeStudioColorTintByTagContains(string hexColor, double mixWithSceneLighting, List<string> filterValues);": {
+    "prefix": "CPHVTubeStudioColorTintByTagContains",
+    "description": "Color tint something that contains a tag in VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioColorTintByTagContains(${1:string hexColor}, ${2:double mixWithSceneLighting}, ${3:List<string> filterValues});"
+    ]
+  },
+  "bool VTubeStudioActivateExpression(string expressionFile);": {
+    "prefix": "CPHVTubeStudioActivateExpression",
+    "description": "Activate an expression in VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioActivateExpression(${1:string expressionFile});"
+    ]
+  },
+  "bool VTubeStudioDeactivateExpression(string expressionFile);": {
+    "prefix": "CPHVTubeStudioDeactivateExpression",
+    "description": "Deactivate an expression in VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioDeactivateExpression(${1:string expressionFile});"
+    ]
+  },
+  "string VTubeStudioSendRawRequest(string requestType, string data);": {
+    "prefix": "CPHVTubeStudioSendRawRequest",
+    "description": "Send a raw request to VTube Studio.",
+    "body": [
+      "CPH.VTubeStudioSendRawRequest(${1:string requestType}, ${2:string data});"
     ]
   }
 }
