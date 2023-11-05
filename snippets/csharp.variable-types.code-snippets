@@ -14,7 +14,7 @@
   "int number = Convert.ToInt32(args[\"number\"].ToString());": {
     "prefix": ["int number = Convert.ToInt32(args[\"number\"].ToString());"],
     "body": [
-      "int {1:number} = Convert.ToInt32(args[\"{2:number}\"].ToString());"
+      "int ${1:number} = Convert.ToInt32(args[\"${2:number}\"].ToString());"
     ]
   },
   "bool boolean = Convert.ToBoolean(args[\"boolean\"]);": {
