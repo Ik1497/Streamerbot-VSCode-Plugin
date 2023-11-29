@@ -1,4 +1,34 @@
 {
+  "public void StreamDeckSetBackgroundLocal(string buttonId, string imageFile, string color, int state)": {
+    "prefix": "CPH.StreamDeckSetBackgroundLocal",
+    "body": [
+      "CPH.StreamDeckSetBackgroundLocal(${1:string buttonId}, ${2:string imageFile}, ${3:string color}, ${4:int state});"
+    ]
+  },
+  "public void StreamDeckSetTitle(string buttonId, string title)": {
+    "prefix": "CPH.StreamDeckSetTitle",
+    "body": [
+      "CPH.StreamDeckSetTitle(${1:string buttonId}, ${2:string title});"
+    ]
+  },
+  "public void StreamDeckSetTitle(string buttonId, string title, int state)": {
+    "prefix": "CPH.StreamDeckSetTitle",
+    "body": [
+      "CPH.StreamDeckSetTitle(${1:string buttonId}, ${2:string title}, ${3:int state});"
+    ]
+  },
+  "public void StreamDeckSetState(string buttonId, int state)": {
+    "prefix": "CPH.StreamDeckSetState",
+    "body": [
+      "CPH.StreamDeckSetState(${1:string buttonId}, ${2:int state});"
+    ]
+  },
+  "public void StreamDeckSetValue(string buttonId, string value)": {
+    "prefix": "CPH.StreamDeckSetValue",
+    "body": [
+      "CPH.StreamDeckSetValue(${1:string buttonId}, ${2:string value});"
+    ]
+  },
   "public void StreamDeckShowAlert(string buttonId)": {
     "prefix": "CPH.StreamDeckShowAlert",
     "body": [
@@ -399,6 +429,36 @@
     "prefix": "CPH.DeleteQuote",
     "body": [
       "CPH.DeleteQuote(${1:int quoteId});"
+    ]
+  },
+  "public void WebsocketConnect(int connection)": {
+    "prefix": "CPH.WebsocketConnect",
+    "body": [
+      "CPH.WebsocketConnect(${1:int connection = 0});"
+    ]
+  },
+  "public void WebsocketDisconnect(int connection)": {
+    "prefix": "CPH.WebsocketDisconnect",
+    "body": [
+      "CPH.WebsocketDisconnect(${1:int connection = 0});"
+    ]
+  },
+  "public bool WebsocketIsConnected(int connection)": {
+    "prefix": "CPH.WebsocketIsConnected",
+    "body": [
+      "CPH.WebsocketIsConnected(${1:int connection = 0});"
+    ]
+  },
+  "public void WebsocketSend(string data, int connection)": {
+    "prefix": "CPH.WebsocketSend",
+    "body": [
+      "CPH.WebsocketSend(${1:string data}, ${2:int connection = 0});"
+    ]
+  },
+  "public void WebsocketSend(System.Byte[] data, int connection)": {
+    "prefix": "CPH.WebsocketSend",
+    "body": [
+      "CPH.WebsocketSend(${1:System.Byte[] data}, ${2:int connection = 0});"
     ]
   },
   "public void WebsocketBroadcastString(string data)": {
@@ -881,34 +941,22 @@
       "CPH.StreamDeckSetBackgroundLocal(${1:string buttonId}, ${2:string imageFile}, ${3:int state});"
     ]
   },
-  "public void StreamDeckSetBackgroundLocal(string buttonId, string imageFile, string color, int state)": {
-    "prefix": "CPH.StreamDeckSetBackgroundLocal",
+  "public void ObsReplayBufferSave(int connection)": {
+    "prefix": "CPH.ObsReplayBufferSave",
     "body": [
-      "CPH.StreamDeckSetBackgroundLocal(${1:string buttonId}, ${2:string imageFile}, ${3:string color}, ${4:int state});"
+      "CPH.ObsReplayBufferSave(${1:int connection = 0});"
     ]
   },
-  "public void StreamDeckSetTitle(string buttonId, string title)": {
-    "prefix": "CPH.StreamDeckSetTitle",
+  "public void ObsSetMediaSourceFile(string scene, string source, string file, int connection)": {
+    "prefix": "CPH.ObsSetMediaSourceFile",
     "body": [
-      "CPH.StreamDeckSetTitle(${1:string buttonId}, ${2:string title});"
+      "CPH.ObsSetMediaSourceFile(${1:string scene}, ${2:string source}, ${3:string file}, ${4:int connection = 0});"
     ]
   },
-  "public void StreamDeckSetTitle(string buttonId, string title, int state)": {
-    "prefix": "CPH.StreamDeckSetTitle",
+  "public void ObsSetImageSourceFile(string scene, string source, string file, int connection)": {
+    "prefix": "CPH.ObsSetImageSourceFile",
     "body": [
-      "CPH.StreamDeckSetTitle(${1:string buttonId}, ${2:string title}, ${3:int state});"
-    ]
-  },
-  "public void StreamDeckSetState(string buttonId, int state)": {
-    "prefix": "CPH.StreamDeckSetState",
-    "body": [
-      "CPH.StreamDeckSetState(${1:string buttonId}, ${2:int state});"
-    ]
-  },
-  "public void StreamDeckSetValue(string buttonId, string value)": {
-    "prefix": "CPH.StreamDeckSetValue",
-    "body": [
-      "CPH.StreamDeckSetValue(${1:string buttonId}, ${2:string value});"
+      "CPH.ObsSetImageSourceFile(${1:string scene}, ${2:string source}, ${3:string file}, ${4:int connection = 0});"
     ]
   },
   "public string ObsGetSceneItemProperties(string scene, string source, int connection)": {
@@ -1187,6 +1235,18 @@
       "CPH.SlobsSourceMuteToggle(${1:string scene}, ${2:string source}, ${3:string filterName}, ${4:int connection = 0});"
     ]
   },
+  "public void ClearNonPersistedGlobals()": {
+    "prefix": "CPH.ClearNonPersistedGlobals",
+    "body": [
+      "CPH.ClearNonPersistedGlobals();"
+    ]
+  },
+  "public void ClearNonPersistedUserGlobals()": {
+    "prefix": "CPH.ClearNonPersistedUserGlobals",
+    "body": [
+      "CPH.ClearNonPersistedUserGlobals();"
+    ]
+  },
   "public T GetGlobalVar<T>(string varName, bool persisted)": {
     "prefix": "CPH.GetGlobalVar",
     "body": [
@@ -1361,34 +1421,22 @@
       "CPH.UnsetAllUsersVar(${1:string varName}, ${2:bool persisted = True});"
     ]
   },
-  "public void WebsocketConnect(int connection)": {
-    "prefix": "CPH.WebsocketConnect",
+  "public void DisableReward(string rewardId)": {
+    "prefix": "CPH.DisableReward",
     "body": [
-      "CPH.WebsocketConnect(${1:int connection = 0});"
+      "CPH.DisableReward(${1:string rewardId});"
     ]
   },
-  "public void WebsocketDisconnect(int connection)": {
-    "prefix": "CPH.WebsocketDisconnect",
+  "public void EnableReward(string rewardId)": {
+    "prefix": "CPH.EnableReward",
     "body": [
-      "CPH.WebsocketDisconnect(${1:int connection = 0});"
+      "CPH.EnableReward(${1:string rewardId});"
     ]
   },
-  "public bool WebsocketIsConnected(int connection)": {
-    "prefix": "CPH.WebsocketIsConnected",
+  "public void PauseReward(string rewardId)": {
+    "prefix": "CPH.PauseReward",
     "body": [
-      "CPH.WebsocketIsConnected(${1:int connection = 0});"
-    ]
-  },
-  "public void WebsocketSend(string data, int connection)": {
-    "prefix": "CPH.WebsocketSend",
-    "body": [
-      "CPH.WebsocketSend(${1:string data}, ${2:int connection = 0});"
-    ]
-  },
-  "public void WebsocketSend(System.Byte[] data, int connection)": {
-    "prefix": "CPH.WebsocketSend",
-    "body": [
-      "CPH.WebsocketSend(${1:System.Byte[] data}, ${2:int connection = 0});"
+      "CPH.PauseReward(${1:string rewardId});"
     ]
   },
   "public void UnPauseReward(string rewardId)": {
@@ -1883,24 +1931,6 @@
       "CPH.ObsReplayBufferStop(${1:int connection = 0});"
     ]
   },
-  "public void ObsReplayBufferSave(int connection)": {
-    "prefix": "CPH.ObsReplayBufferSave",
-    "body": [
-      "CPH.ObsReplayBufferSave(${1:int connection = 0});"
-    ]
-  },
-  "public void ObsSetMediaSourceFile(string scene, string source, string file, int connection)": {
-    "prefix": "CPH.ObsSetMediaSourceFile",
-    "body": [
-      "CPH.ObsSetMediaSourceFile(${1:string scene}, ${2:string source}, ${3:string file}, ${4:int connection = 0});"
-    ]
-  },
-  "public void ObsSetImageSourceFile(string scene, string source, string file, int connection)": {
-    "prefix": "CPH.ObsSetImageSourceFile",
-    "body": [
-      "CPH.ObsSetImageSourceFile(${1:string scene}, ${2:string source}, ${3:string file}, ${4:int connection = 0});"
-    ]
-  },
   "public string get_TwitchClientId()": {
     "prefix": "CPH.get_TwitchClientId",
     "body": [
@@ -2001,6 +2031,18 @@
     "prefix": "CPH.GetEventType",
     "body": [
       "CPH.GetEventType();"
+    ]
+  },
+  "public bool TryGetArg(string argName, ref System.Object& value)": {
+    "prefix": "CPH.TryGetArg",
+    "body": [
+      "CPH.TryGetArg(${1:string argName}, ${2:System.Object& value});"
+    ]
+  },
+  "public bool TryGetArg<T>(string argName, ref T& value)": {
+    "prefix": "CPH.TryGetArg",
+    "body": [
+      "CPH.TryGetArg(${1:string argName}, ${2:T& value});"
     ]
   },
   "public Streamer.bot.Plugin.Interface.Model.TwitchUserInfo TwitchGetBroadcaster()": {
@@ -2391,24 +2433,6 @@
     "prefix": "CPH.EnableTimer",
     "body": [
       "CPH.EnableTimer(${1:string timerName});"
-    ]
-  },
-  "public void DisableReward(string rewardId)": {
-    "prefix": "CPH.DisableReward",
-    "body": [
-      "CPH.DisableReward(${1:string rewardId});"
-    ]
-  },
-  "public void EnableReward(string rewardId)": {
-    "prefix": "CPH.EnableReward",
-    "body": [
-      "CPH.EnableReward(${1:string rewardId});"
-    ]
-  },
-  "public void PauseReward(string rewardId)": {
-    "prefix": "CPH.PauseReward",
-    "body": [
-      "CPH.PauseReward(${1:string rewardId});"
     ]
   }
 }
